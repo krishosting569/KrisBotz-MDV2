@@ -324,28 +324,38 @@ const sections = [
         },
 ]
 
-let tek = `*Selamat ${ucapan()} ${conn.getName(m.sender)}*
+let tek = `✧────···[ Dashboard ]···────✧
+*Selamat$ {ucapan()} ${conn.getName(m.sender)}*
 
-╭─────═[ BOT INFO ]═─────⋆
-│╭───────────────·
-│  *• Nama Bot:* ${namebot}
-│  *• Prefix:*  [ ${_p} ]
-│  *• Aktif selama:*  ${mpt}
-│  *• Owner:* ${nameown}
+╭─────═[ INFO USER ]═─────⋆
+│╭───────────────···
+┴│☂︎ *Name:*  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+${emot}│☂︎ *Tag:* @${m.sender.split`@`[0]}
+${emot}│☂︎ *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+${emot}│☂︎ *Limit:* ${usrs.limit}
+${emot}│☂︎ *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+┬│☂︎  *Level:* ${usrs.level}
 │╰────────────────···
-┠─────═[ USER INFO ]═─────⋆
+┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-│  *• Name:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-│  *• Tags:* @${m.sender.split`@`[0]}
-│  *• Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-│  *• Limit:*  ${usrs.limit} │╰────────────────···
-┠──────────────────`
+┴│☂︎ *Nama Bot:* ${namebot}
+${emot}│☂︎ *Prefix:* [ ${_p} ]
+${emot}│☂︎ *Baileys:* Multi Device
+${emot}│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+${emot}│☂︎ *Type:* Node.Js
+┬│☂︎ *Runtime:* ${mpt}
+│╰────────────────···
+╰──────────═┅═──────────
+╭━━━━━━━━━━━━━━━━┈─⋆
+│ ☂︎ *Author:* ${nameown}
+│ ☂︎ *Owner:* ${nameown}
+╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
+  footer: ``,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `MENU KRIS ⎙`, 
+  buttonText: `CLICK HERE ⎙`, 
   sections
 }
   if (teks == '404') {
@@ -540,7 +550,7 @@ const listMessage = {
 
     }
 
-    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*Tunggu 1Jam Kak. . .*', ftrol) 
 
     
     //------------------< MENU >----------------
@@ -548,12 +558,14 @@ const listMessage = {
     //------------------ SIMPLE
     /*conn.reply(m.chat, text, fkon, { contextInfo: { mentionedJid: [m.sender],
         externalAdReply: {
-            title: `${htjava} ${namebot}`,
-            body: titlebot,
+            title: `${namebot}`,
+            body: wm,
             description: titlebot,
             mediaType: 2,
           thumbnail: await(await fetch(thumb2)).buffer(),
-         mediaUrl: sig
+         mediaUrl: https://kris.com
+         
+       
         }
      }
     })*/
@@ -599,7 +611,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/krishosting569/'
                     }
                 },
                 {
