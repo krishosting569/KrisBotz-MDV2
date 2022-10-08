@@ -1,7 +1,7 @@
 {
-    "name": "wh-mods-dev",
+    "name": "kris-bot-md",
     "version": "3.1.0",
-    "description": "WhatsApp BOT By wahid",
+    "description": "WhatsApp BOT By krishosting",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -45,16 +45,16 @@
         "google-it",
         "baileys-md"
     ],
-    "homepage": "https://github.com/WH-MODS-BOT/fix-bot-v1",
+    "homepage": "https://github.com/krishosting569/krisbot-md",
     "author": {
-        "name": "WH-MODS-BOT"
+        "name": "krishosting569"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/WH-MODS-BOT/fix-bot-v1"
+        "url": "git+https://github.com/krishosting569/krisbot-md"
     },
     "bugs": {
-        "url": "https://github.com/WH-MODS-BOT/fix-bot-v1/"
+        "url": "https://github.com/krishosting569/krisbot-md/"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
