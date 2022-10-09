@@ -328,7 +328,7 @@ let usrs = db.data.users[m.sender]
         },
 ]
 
-let tek =  `✧────···[ Dashboard ]···────✧
+let tek = `✧────···[ Dashboard ]···────✧
 *Haii Selamat ${ucapan()} ${conn.getName(m.sender)}*
 
 ╭━━━━━━━━━━━━━━━━┈─✧
