@@ -47,16 +47,20 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/ibnu_ramadhani.1' //Link Instagrammu
-global.sgh = 'https://github.com/bisnissaya12' //Link Githubmu
-global.sgc = 'https://chat.whatsapp.com/D71CKTjDBgkBYmaNZuUmcG'
+global.sig = 'https://instagram.com/krishosting' //Link Instagrammu
+global.sgh = 'https://github.com/krishosting569' //Link Githubmu
+global.sgc = 'https://chat.whatsapp.com/H7BG4LQJ7DJ0yILbbj4dI2'
 global.sdc = '-' //Isi Pake Link Discordmu Kalo Gada Biarin aja
-global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi terserah :v
+global.snh = 'https://nhentai.net/g/Harammek🗿' //Hmmm, Ini boleh kalian isi terserah :v
 
 /*============== PAYMENT ==============*/
-global.pdana = '0882007324216' //Nomor Danamu
-global.ppulsa = '085786211623' //Nomor SimCard Yang Kamu Pake
-global.psaweria = '-' //Link Saweriamu Kalo Nggada Ketik - aja
+global.pdana = '0882007324218' //dana
+global.povo = '0882007324218' //ovo
+global.pgopay = '0882007324218' //gopay
+global.plinkaja = '0882007324218' //link aja
+global.ppulsa = '0882007324218' //telkomsel
+global.ppulsa2 = '085786211623' // kalau ada kartu lain isi aja
+global.psaweria = 'https://saweria.com/kosong'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '6288239337467' //Nomor Bot
@@ -70,8 +74,8 @@ global.owner = [
   ['6285786211623', 'KRIS HOSTING 🅥⁩ 🎐', true] //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods =   ['6285786211623'] // Want some help?
-global.prems =  ['6285786211623'] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+global.mods =   ['628884928647'] // Want some help?
+global.prems =  ['628884928647'] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 
 global.zenzkey = 'b8040941f7'
@@ -117,8 +121,8 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 KRIS HOSTING 🅥⁩  汉  」' //Main Watermark
-global.wm2 = 'BOTZ-KRIS *By Kris hosting*'
+global.wm = '                「 KRIS HOSTING  」' //Main Watermark
+global.wm2 = '_KRIS HOSTING_'
 global.wm3 = '⫹⫺ BOTZ-KRIS '
 global.botdate = `⫹⫺ 𝗛𝗮𝗿𝗶: ${week} ${date}`
 global.bottime = `𝗪𝗮𝗸𝘁𝘂 : ${wktuwib}`
@@ -440,7 +444,7 @@ global.rpg = {
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Update 'settings.js'"))
+  console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
 
