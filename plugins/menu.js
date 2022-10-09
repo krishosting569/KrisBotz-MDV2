@@ -258,104 +258,73 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
    
    const sections = [
    {
-	title: `${htki} ▮𝗦𝘁𝗮𝘁𝘂𝘀 」 ${htka}`,
+	title: `${htki} ᴍᴀɪɴ ${htka}`,
 	rows: [
-	    {title: `📛)ഒ Info Bot`, rowId: ".info", description: "✧ Info nya I ⁩${namebot} ><"},
-	    {title: `💌)ഒ Owner`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
-	{title: `🗣)ഒ Request Fitur`, rowId: ".request", description: "✧ Request Fitur menarik ke ${namebot}"},
-	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 ${namebot} "},
-	{title: `📊)ഒ Test Speed`, rowId: ".testspeed", description: "✧ Test Install Speed BOT"},
-	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 ${namebot} "},
+	    {title: `⚡ ${pmenus} 𝚂𝙿𝙴𝙴𝙳 𝙱𝙾𝚃`, rowId: ".ping", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 𝙺𝚎𝚌𝚎𝚙𝚊𝚝𝚊𝚗 𝚁𝚎𝚜𝚙𝚘𝚗 𝙱𝙾𝚃"},
+	    {title: `⏰ ${pmenus} 𝚁𝚄𝙽𝚃𝙸𝙼𝙴 𝙱𝙾𝚃`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 𝚆𝚊𝚔𝚝𝚞 𝙱𝙾𝚃 𝙱𝚎𝚛𝚓𝚊𝚕𝚊𝚗"}, 
+	    {title: `💌 ${pmenus} 𝙾𝚆𝙽𝙴𝚁 𝙱𝙾𝚃`, rowId: ".creator", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 𝙸𝚗𝚏𝚘𝚛𝚖𝚊𝚜𝚒 𝚃𝚎𝚗𝚝𝚊𝚗𝚐 𝙾𝚠𝚗𝚎𝚛"},
+	    {title: `📔 ${pmenus} 𝚂𝙲𝚁𝙸𝙿𝚃 𝙱𝙾𝚃`, rowId: ".sc", description: `𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎 ${namebot}`},
 	]
     },{
-	title: `${htki} ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」 ${htka}`,
+	title: `${htki} sᴜᴘᴘᴏʀᴛ ${htka}`,
 	rows: [
-	    {title: `🔖 〉ɞ 『 Sewa BOT 』`, rowId: ".sewa", description: "✧ Menampilkan list harga sewa BOT"},
-	    {title: `📑 〉ɞ 『 Buy Script BOT 』`, rowId: ".owner", description: "✧ Menampilkan list harga script BOT"},
-	    {title: `🌟 〉ɞ 『 UP Premium 』`, rowId: ".premium", description: "✧ Menampilkan list harga upgrade premium"},
-	    {title: `🥞 〉ɞ 『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
-	{title: `✨ 〉ɞ 『 Rating 』`, rowId: ".rate", description: '✧ Jangan kasih rate rendah dong :/'},
-	{title: `🗳️ 〉ɞ 『 My Profile 』`, rowId: ".pp", description: '✧ Siapa ya kamu?...'},
+	    {title: `💹 ${pmenus} 𝙳𝙾𝙽𝙰𝚃𝙴`, rowId: ".donasi", description: '𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝙾𝚠𝚗𝚎𝚛 𝙰𝚐𝚊𝚛 𝙻𝚎𝚋𝚒𝚑 𝚂𝚎𝚖𝚊𝚗𝚐𝚊𝚝'},
 	]
 	},{
-	title: `${htki} ▮𝗠𝗲𝗻𝘂 ${htka}`,
+	title: `${htki} ᴍᴇɴᴜ ${htka}`,
 	rows: [
-	    {title: `⫹🗒️ › 𐐪-〚 All Menu 〛-𐑂`, rowId: ".? all", description: "╰► Waduhh. Langsung semuanya (≧▽≦)"},
-	    {title: `⫹🌱 › 𐐪-〚 Rpg 〛-𐑂`, rowId: ".? rpg", description: "╰► Calon anak petualang nih... -𐑂"},
-	{title: `⫹✨ › 𐐪-〚 Exp 〛-𐑂`, rowId: ".? xp", description: "╰► Kalau dah level 100 dapat hadiah (≧▽≦)"},
-	{title: `⫹🎮 › 𐐪-〚 Game 〛-𐑂`, rowId: ".? game", description: "╰► Bg kamu main game apa?.... >-<"},
-	{title: `⫹🧩 › 𐐪-〚 Fun 〛-𐑂`, rowId: ".? fun", description: "╰► Gabut ya bang?"},
-	{title: `⫹🐚 › 𐐪-〚 Kerang 〛-𐑂`, rowId: ".? kerangajaib", description: "╰► Mau tanya apa sih bg?..."},
-	{title: `⫹📑 › 𐐪-〚 Quotes 〛-𐑂`, rowId: ".? quotes", description: "╰► Ada yg mau nyari topik nih... >-<"},
-	{title: `⫹⛩️ › 𐐪-〚 Anime 〛-𐑂`, rowId: ".? anime", description: "╰► Lah, Wibuu...-𐑂"},
-	{title: `⫹🔞 › 𐐪-〚 Nsfw 〛-𐑂`, rowId: ".? nsfw", description: "╰► Anak kecil ga boleh ya SARU TOLOL...."},
-	{title: `⫹🌟 › 𐐪-〚 Premium 〛-𐑂`, rowId: ".? premium", description: "╰► Hanya khusus users premium..."},
-	{title: `⫹🎭 › 𐐪-〚 Anonymous chat 〛-𐑂`, rowId: ".? anonymous", description: "╰► Mau ngomong sama mantan kah? >.<"},
-	{title: `⫹☪️ › 𐐪-〚 Islamic 〛-𐑂`, rowId: ".? quran", description: "╰► Tibat ya kak..."},
-	{title: `⫹🌐 › 𐐪-〚 Internet 〛-𐑂`, rowId: ".? internet", description: "╰► Ga ada google ya kak..."},
-	{title: `⫹📤️ › 𐐪-〚 Downloader 〛-𐑂`, rowId: ".? downloader", description: "╰► Jangan download yg aneh-aneh, Xixixi (≧▽≦)"},
-	{title: `⫹🃏 › 𐐪-〚 Stikers 〛-𐑂`, rowId: ".? stiker", description: "╰► Kalau bikin sticker jangan di spam ya kak..."},
-	{title: `⫹✏️ › 𐐪-〚 Nulis 〛-𐑂`, rowId: ".? nulis", description: "╰► Hati-hati ke tawan bu sri..."},
-	{title: `⫹🎵 › 𐐪-〚 Audio 〛-𐑂`, rowId: ".? audio", description: "╰► Calon remixer nih haha ></"},
-	{title: `⫹🦄 › 𐐪-〚 Group 〛-𐑂`, rowId: ".? group", description: "╰► Menu settingan buat group mu kak -𐑂"},
-	{title: `⫹👑 › 𐐪-〚 Admin 〛-𐑂`, rowId: ".? admin", description: "╰► Yg bukan admin jangan make fitur ini >-<"},
-	{title: `⫹🗃️️ › 𐐪-〚 Database 〛-𐑂`, rowId: ".? database", description: "╰► Simpen apa tuh.... >.<"},
-	{title: `⫹🧰️ › 𐐪-〚 Tools 〛-𐑂`, rowId: ".? tools", description: "╰► Butuh apa aja bot akan bantu -𐑂"},
-	{title: `️️⫹📊️ › 𐐪-〚 Info 〛-𐑂`, rowId: ".? info", description: "╰► Info lowker kak?..."},
-	{title: `⫹👩‍💻 › 𐐪-〚 Owner 〛-𐑂`, rowId: ".? owner", description: "╰► Yg bukan developer gausah nge klik fitur ini !"},
-	{title: `⫹🎨 › 𐐪-〚 Maker 〛-𐑂`, rowId: ".? maker", description: "╰► Bikin logo apa ya enaknya?"},
-	{title: `⫹💌 › 𐐪-〚 Store 〛-𐑂`, rowId: ".? store", description: "╰► Anak jebeh ya kamu kak?"},
-	{title: `⫹🔥 › 𐐪-〚 Virtex 〛-𐑂`, rowId: ".? virus", description: "╰► Jangan kak bahaya -𐑂"},
+	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
+	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
+	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
+	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho (๑˃̵　ᴗ　˂̵)"},
+	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
+	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
+	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
+	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Wibu wibu🐦"},
+	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagnean"},
+	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Untuk user premium"},
+	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
+	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
+	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
+	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu dari BOT"},
+	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
+	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
+	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
+	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
+	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
+	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
+	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
+	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
+	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
+	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
 	]
-    },{
-	title: `${htki} ▮𝗜𝗻𝗳𝗼 」 ${htka}`,
-	rows: [
-	    {title: `💬 ∫ » Event «`, rowId: ".event", description: "✧ Nyari diskon? hahaha >.</"},
-	    {title: `🎳 ∫ » Version «`, rowId: ".cekversi", description: "✧ Mau ngapain ya?..."},
-	    {title: `🎁 ∫ » Referal «`, rowId: ".ref", description: "✧ Bagikan code undangan biar dapat hadiah...."},
-	    {title: `🔭 ∫ » Script «`, rowId: ".sc", description: `✧ Source Code ${namebot}`},
-	    {title: `📮 ∫ » Rules «`, rowId: ".rules", description: `✧ Peraturan menggunakan ${namebot}`},
-	    {title: `💰 ∫ » Donasi «`, rowId: ".donasi", description: '✧ Support BOT agar on 1 Minggu non stop'},
-	  {title: `✨ ∫ » Rating «`, rowId: ".rate", description: '✧ Support BOT agar Semangat update'},
-	  {title: `🌸 ∫ » Group «`, rowId: ".groupbot", description: '✧ Jangan lupa mampir ya...'},
-	  {title: `🎖️ ∫ » Thanks To «`, rowId: ".tqto", description: '✧ Kawan-kawan Yg membantu pembuatan bot ini...'},
-	  {title: `☎️ ∫ » Kata Penutup «`, rowId: ".galau", description: '✧ Terima kasih yang udah menggunakan bot ini dengan baik (≧▽≦)'},
-      ]
-    },
+  },
 ]
 
-let tek = `✧────···[ MENU ${namebot} ]···────✧
-*Selamat ${ucapan()} ${conn.getName(m.sender)}*
-
-╭─────═[ INFO USER ]═─────⋆
-│╭───────────────···
-┴│☂︎ *Name:*  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-${emot}│☂︎ *Tag:* @${m.sender.split`@`[0]}
-${emot}│☂︎ *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
-${emot}│☂︎ *Limit:* ${usrs.limit}
-${emot}│☂︎ *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┬│☂︎  *Level:* ${usrs.level}
-│╰────────────────···
-┠─────═[ INFO BOT ]═─────⋆
-│╭────────────────···
-┴│☂︎ *Nama Bot:* ${namebot}
-${emot}│☂︎ *Prefix:* [ ${_p} ]
-${emot}│☂︎ *Baileys:* Multi Device
-${emot}│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-${emot}│☂︎ *Type:* Node.Js
-┬│☂︎ *Runtime:* ${mpt}
-│╰────────────────···
-╰──────────═┅═──────────
-╭━━━━━━━━━━━━━━━━┈─⋆
-│ ☂︎ *Author:* KRIS HOSTING
-│ ☂︎ *Owner:* ${nameown}
+let tek = `✧────···[ Dashboard ]···────✧
+*${ucapan()} ${conn.getName(m.sender)}*
+╭━━━━━━━━━━━━━━━━┈─✧
+┴
+│⬡ Aktif selama ${mpt}
+│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│⬡ Prefix : [ ${_p} ]
+│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┬
+├━━━━━━━━━━━━━━━━┈─⋆
+│ ▸ *ᴀᴜᴛʜᴏʀ :* KRIS HOSTING
+┴ ▸ *ᴏᴡɴᴇʀ :* KRIS OWNER
+✧
+┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
+│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `MENU KRIS⎙`, 
+  buttonText: `Klik Disini ⎙`, 
   sections
 }
   if (teks == '404') {
@@ -609,7 +578,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/krishosting569'
+                        url: 'https://github.com/ImYanXiao/Elaina-MultiDevice'
                     }
                 },
                 {
