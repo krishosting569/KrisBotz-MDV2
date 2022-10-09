@@ -1,7 +1,4 @@
-// Script Ori By BochilGaming
-// Ditulis Ulang Oleh ImYanXiao
-
-import { promises } from 'fs'
+import { promises, readFileSync } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
 import moment from 'moment-timezone'
@@ -9,39 +6,40 @@ import os from 'os'
 import fs from 'fs'
 import fetch from 'node-fetch'
 const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
-
+let emot = `${pickRandom(['⎔', '✦', '⭑', 'ᯬ', '⭔', '◉', '⬟', '▢', '᭻', '»', '〆', '々', '⛥', '✗', '⛊', '⚜', '⚝', '⚚', '♪'])}`
+	
 const defaultMenu = {
   before: `
 ╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Name:* %name
-⬡│☂︎ *Tag:* %tag
-⬡│☂︎ *Premium:* %prems
-⬡│☂︎ *Limit:* %limit
-⬡│☂︎ *Money:* %money
-⬡│☂︎ *Role:* %role
-⬡│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
-⬡│☂︎ *Xp:* %exp / %maxexp
+${emot}│☂︎ *Tag:* %tag
+${emot}│☂︎ *Premium:* %prems
+${emot}│☂︎ *Limit:* %limit
+${emot}│☂︎ *Money:* %money
+${emot}│☂︎ *Role:* %role
+${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
+${emot}│☂︎ *Xp:* %exp / %maxexp
 ┬│☂︎ *Total Xp:* %totalexp
 │╰────────────────···
 ┠─────═[ TODAY ]═─────⋆
 │╭────────────────···
 ┴│    *${ucapan()} %name!*
-⬡│☂︎ *Tanggal:* %week %weton
-⬡│☂︎ *Date:* %date
-⬡│☂︎ *Tanggal Islam:* %dateIslamic
+${emot}│☂︎ *Tanggal:* %week %weton
+${emot}│☂︎ *Date:* %date
+${emot}│☂︎ *Tanggal Islam:* %dateIslamic
 ┬│☂︎ *Waktu:* %time
 │╰────────────────···
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
 ┴│☂︎ *Nama Bot:* %me
-⬡│☂︎ *Mode:* %mode
-⬡│☂︎ *Prefix:* [ *%_p* ]
-⬡│☂︎ *Baileys:* Multi Device
-⬡│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-⬡│☂︎ *Platform:* %platform
-⬡│☂︎ *Type:* Node.Js
-⬡│☂︎ *Uptime:* %muptime
+${emot}│☂︎ *Mode:* %mode
+${emot}│☂︎ *Prefix:* [ *%_p* ]
+${emot}│☂︎ *Baileys:* Multi Device
+${emot}│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+${emot}│☂︎ *Platform:* %platform
+${emot}│☂︎ *Type:* Node.Js
+${emot}│☂︎ *Uptime:* %muptime
 ┬│☂︎ *Database:* %rtotalreg dari %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
@@ -53,17 +51,21 @@ const defaultMenu = {
 %readmore
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
-  body: '│○ %cmd %isPremium %islimit',
+  body: `${emot} %cmd %isPremium %islimit`,
   footer: '▣───────────⬣\n',
   after: `%c4 %me`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
+  let res = JSON.parse(readFileSync('./json/emoji.json'))
+     let em = res.emoji
+	let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+	let whmods = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 	let tags
 	let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+  let arrayMenu = ['all', 'anime', 'update', 'maker', 'berita', 'edukasi', 'news', 'random', 'logo', 'menbalas', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
-  'main': 'Main',
+  'main': 'Main', 
   'game': 'Game',
   'rpg': 'RPG Games',
   'xp': 'Exp & Limit',
@@ -83,7 +85,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   'tools': 'Tools',
   'nulis': 'MagerNulis & Logo',
   'audio': 'Audio',
+  'logo': 'Logo Menu',
   'maker': 'Maker',
+  'berita': 'Berita',
   'database': 'Database',
   'quran': 'Al Qur\'an',
   'owner': 'Owner',
@@ -125,6 +129,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   if (teks == 'quotes') tags = {
     'quotes': 'Quotes'
   }
+  if (teks == 'berita') tags = {
+    'berita': 'Berita'
+  }
   if (teks == 'admin') tags = {
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'group': 'Grup'
@@ -151,6 +158,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   if (teks == 'tools') tags = {
     'tools': 'Tools'
   }
+if (teks == 'menbalas') tags = {
+    'menbalas': 'Menfess'
+  }
   if (teks == 'fun') tags = {
     'fun': 'Fun'
   }
@@ -159,7 +169,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
   }
   if (teks == 'vote') tags = {
     'vote': 'Voting',
-    'absen': 'Absen'
+  }
+  if (teks == 'logo') tags = {
+    'logo': 'Logo Menu',
   }
   if (teks == 'absen') tags = {
     'absen': 'Absen'
@@ -254,18 +266,19 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
       }) * 1000
     }
     let mpt = clockString(_mpt)
-    let usrs = db.data.users[m.sender]
-   
+
+let usrs = db.data.users[m.sender]
+
    const sections = [
    {
 	title: `${htki} ▮𝗦𝘁𝗮𝘁𝘂𝘀 」 ${htka}`,
 	rows: [
-	    {title: `📛)ഒ Info Bot`, rowId: ".info", description: "✧ Info nya I ⁩${namebot} ><"},
+	    {title: `📛)ഒ Info Bot`, rowId: ".info", description: "✧ Info nya I 🅥⁩  ><"},
 	    {title: `💌)ഒ Owner`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
-	{title: `🗣)ഒ Request Fitur`, rowId: ".request", description: "✧ Request Fitur menarik ke ${namebot}"},
-	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 ${namebot} "},
+	{title: `🗣)ഒ Request Fitur`, rowId: ".request", description: "✧ Request Fitur menarik ke BOT"},
+	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 IBNU-MD "},
 	{title: `📊)ഒ Test Speed`, rowId: ".testspeed", description: "✧ Test Install Speed BOT"},
-	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 ${namebot} "},
+	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 IBNU-MD "},
 	]
     },{
 	title: `${htki} ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」 ${htka}`,
@@ -324,28 +337,59 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
     },
 ]
 
-let tek = `✧────···[ DASHBOARD} ]···────✧
-*Selamat ${ucapan()} ${conn.getName(m.sender)}*
-
-╭─────═[ INFO USER ]═─────⋆
-│╭───────────────···
-┴│☂︎ *Name:*  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-${emot}│☂︎ *Tag:* @${m.sender.split`@`[0]}
-${emot}│☂︎ *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
-${emot}│☂︎ *Limit:* ${usrs.limit}
-${emot}│☂︎ *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┬│☂︎  *Level:* ${usrs.level}
-│╰────────────────···
-⃝▣──「 *INFO CMD* 」───⬣
-│ ☂︎ *Author:* KRIS HOSTING
-│ ☂︎ *Owner:* KRIS HOST
-▣────────────⬣`
+let tek = `✧────···[ Dashboard ]···────✧
+*${ucapan()} ${conn.getName(m.sender)}*
+╭━━━━━━━━━━━━━━━━┈─✧
+┴
+┬
+│${emot} 「 Hai Kak👋 」
+├❖ 「 ${conn.getName(m.sender)} 」
+├❖  Bagaimana Harimu? 😄
+├❖  Terima Kasih Telah Menggunakan Bot Kami
+│
+├━━━━━━━━━━━━━━━━┈─⋆
+│  「 *U s e r  I n f o 克* 」
+│${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+│${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
+│${emot} *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+│${emot} *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+│
+├━━━━━━━━━━━━━━━━┈─⋆
+│  「 *S t a t u s  I n f o 比* 」
+│${emot} *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
+│${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
+│${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
+│${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
+│
+├━━━━━━━━━━━━━━━━┈─⋆
+│  「 *I n f o   B o t 比* 」
+│${emot} Aktif selama ${mpt}
+│${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│${emot} Prefix : [ ${_p} ]
+│${emot} *${Object.keys(global.db.data.users).length}* Pengguna
+│${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+│
+├━━━━━━━━━━━━━━━━┈─⋆
+│
+│ ▸ *Sumber :* YouTube KRIS BOTZ
+│ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
+┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
+✧
+┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
+│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
+│
+├━━━━━━━━━━━━━━━━┈─⋆
+│${emot} *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
+│${emot} *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
+│${emot} ${clockStringP(usrs.premiumTime - new Date())}` : ''}
+╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `CLICK HERE ⎙`, 
+  buttonText: `Klik Disini ⎙`, 
   sections
 }
   if (teks == '404') {
