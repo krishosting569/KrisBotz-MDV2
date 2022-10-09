@@ -328,7 +328,9 @@ let usrs = db.data.users[m.sender]
         },
 ]
 
-let tek = `✧────···『 MENU KRIS 』···────✧
+let tek =  `✧────···[ Dashboard ]···────✧
+*Haii Selamat ${ucapan()} ${conn.getName(m.sender)}*
+
 ╭━━━━━━━━━━━━━━━━┈─✧
 ├❖ ${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 ├❖ ${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
@@ -350,7 +352,7 @@ const listMessage = {
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `MENU KRIS ⎙`, 
+  buttonText: `Klik Disini ⎙`, 
   sections
 }
   if (teks == '404') {
