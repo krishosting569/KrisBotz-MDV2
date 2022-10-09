@@ -272,10 +272,11 @@ let usrs = db.data.users[m.sender]
    const sections = [
    {
 	title: `${htki} MAIN ${htka}`,
+    rows: [title: `${htki} MAIN ${htka}`,
     rows: [
         {title: `⚡ ${pmenus}〚 SPEED BOT 』`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
-        {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `📑 ${pmenus} Owner`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
+        {title: `💌 ${pmenus} 『 OWNER BOT 』`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+        {title: `📑 ${pmenus} 『 OWNER 』`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
         {title: `⏰ ${pmenus} 『 RUNTIME BOT 』`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
         {title: `📔 ${pmenus} 『 SCRIPT BOT 』`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
@@ -289,7 +290,7 @@ let usrs = db.data.users[m.sender]
         },{
           title: `${htki}『 MENU MENFESS ${htka} 』`,
           rows: [
-            {title: `💬 ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
+            {title: `💬 ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Menu Manfess BOT"},
           ]},{
         title: `${htki} MENU ${htka}`,
         rows: [
@@ -303,7 +304,7 @@ let usrs = db.data.users[m.sender]
         {title: `⛩️ ${pmenus} 『 Anime 』`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
         {title: `🔞 ${pmenus} 『 Nsfw 』`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
         {title: `🌟 ${pmenus} 『 Premium 』`, rowId: ".? premium", description: "Only premium Users"},
-        {title: `🎭 ${pmenus} 『 Anonymous 』 Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
+        {title: `🎭 ${pmenus} 『 Anonymous Chats 』`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
         {title: `📖 ${pmenus} 『 Al-Quran 』`, rowId: ".? quran", description: "Tobat yuk kak"},
         {title: `🌎 ${pmenus} 『 Internet 』`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
         {title: `🌎 ${pmenus} 『 Berita 』`, rowId: ".? berita", description: "Cari berita terupdate"},
@@ -330,56 +331,27 @@ let usrs = db.data.users[m.sender]
 let tek = `✧────···[ Dashboard ]···────✧
 *${ucapan()} ${conn.getName(m.sender)}*
 ╭━━━━━━━━━━━━━━━━┈─✧
-┴
-┬
-│${emot} 「 Hai Kak👋 」
-├❖ 「 ${conn.getName(m.sender)} 」
-├❖  Bagaimana Harimu? 😄
-├❖  Terima Kasih Telah Menggunakan Bot Kami
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *U s e r  I n f o 克* 」
-│${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-│${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
-│${emot} *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-│${emot} *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *S t a t u s  I n f o 比* 」
-│${emot} *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-│${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-│${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
-│${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
-│
+├❖ ${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+├❖ ${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
+├❖ ${emot} *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 ├━━━━━━━━━━━━━━━━┈─⋆
 │  「 *I n f o   B o t 比* 」
-│${emot} Aktif selama ${mpt}
-│${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│${emot} Prefix : [ ${_p} ]
-│${emot} *${Object.keys(global.db.data.users).length}* Pengguna
-│${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+├❖ ${emot} Aktif selama ${mpt}
+├❖ ${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+├❖ ${emot} Prefix : [ ${_p} ]
+├❖ ${emot} *${Object.keys(global.db.data.users).length}* Pengguna
+├❖ ${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+├❖ ${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│
-│ ▸ *Sumber :* YouTube KRIS BOTZ
 │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
-┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
-✧
-┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│${emot} *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-│${emot} *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-│${emot} ${clockStringP(usrs.premiumTime - new Date())}` : ''}
-╰━━━━━━━━━━━━━━━━┈─◂`
+├━━━━━━━━━━━━━━━━┈─⋆`
 const listMessage = {
   text: tek,
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `Klik Disini ⎙`, 
+  buttonText: `MENU KRIS ⎙`, 
   sections
 }
   if (teks == '404') {
