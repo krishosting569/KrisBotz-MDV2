@@ -303,28 +303,25 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 
 let tek = `✧────···[ Dashboard ]···────✧
 *${ucapan()} ${conn.getName(m.sender)}*
-╭━━━━━━━━━━━━━━━━┈─✧
-┴
-│⬡ Aktif selama ${mpt}
-│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│⬡ Prefix : [ ${_p} ]
-│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
-│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┬
-├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *ᴀᴜᴛʜᴏʀ :* KRIS HOSTING
-┴ ▸ *ᴏᴡɴᴇʀ :* KRIS OWNER
-✧
-┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
-╰━━━━━━━━━━━━━━━━┈─◂`
+╭─────═[ INFO USER ]═─────⋆
+│╭───────────────···
+┴│☂︎ *Name:*  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+${emot}│☂︎ *Tag:* @${m.sender.split`@`[0]}
+${emot}│☂︎ *Premium:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
+${emot}│☂︎ *Limit:* ${usrs.limit}
+${emot}│☂︎ *Status:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+┬│☂︎  *Level:* ${usrs.level}
+│╰────────────────···
+⃝▣──「 *INFO CMD* 」───⬣
+│ ☂︎ *Author:* KRIS HOSTING
+│ ☂︎ *Owner:* KRIS HOST
+▣────────────⬣`
 const listMessage = {
   text: tek,
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `Klik Disini ⎙`, 
+  buttonText: `List Menu ⎙`, 
   sections
 }
   if (teks == '404') {
