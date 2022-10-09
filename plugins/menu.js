@@ -328,8 +328,7 @@ let usrs = db.data.users[m.sender]
         },
 ]
 
-let tek = `✧────···[ Dashboard ]···────✧
-*${ucapan()} ${conn.getName(m.sender)}*
+let tek = `✧────···『 MENU KRIS 』···────✧
 ╭━━━━━━━━━━━━━━━━┈─✧
 ├❖ ${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 ├❖ ${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
