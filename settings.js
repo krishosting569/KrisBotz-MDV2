@@ -73,17 +73,21 @@ global.nomorbot = '62XXXXXXXXXXX'
 global.nomorown = '6285786211623'
 global.namebot = '𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝'
 global.nameown = '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠'
+
+/*============== BIODATA ==============*/
 global.umurown = '15'
 global.tinggalown = 'Jawa Tengah Cikamuning' 
 global.hobyown = 'Membikin Bot'
 global.sifatown = 'Baik Penolong Penyayang'
 global.agamaown = 'Islam'
+global.genderown = 'laki-laki'
+global.kelasown = '9'
+global.tanggallahirown = '05-𝐀𝐠𝐮𝐬𝐭𝐮𝐬-2022'
+global.namarlown = 'Hamba Allah'
 
 /*============== Github Thanks To ==============*/
-global.namagithub = 'krishosting569' // nama github lu
-global.linkgithub = 'https://github.com/krishosing569' // tarok link github lu
-
-// klau kgk ada github kasih tanda '-' aja biar kgk error
+global.namagithub = 'krishosting' // nama github lu
+global.linkgithub = 'https://github.com/keposlur' // tarok link github lu
 
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
