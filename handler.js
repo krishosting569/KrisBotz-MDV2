@@ -1308,14 +1308,14 @@ export async function participantsUpdate({ id, participants, action }) {
     sourceUrl: sgc
      }}
   })*/
-  let welcom = 'https://gaadabk.png'
+  let welcom = 'https://telegra.ph/file/gaadagahaha.jpg'
 
-  let godbye = 'hgaadaejejbk.png'
+  let godbye = 'https://telegra.ph/file/hahmsnganhaha.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'KRIS BOTZ', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://krishosirjdjdj.id',
+    mediaUrl: 'https://www.krishosting.ckm.my.id',
     mediaType: 2, 
     description: sgc,
-    title: "𝐡𝐚𝐢 𝐤𝐚𝐤",
+    title: "_welcome_",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig
@@ -1404,7 +1404,7 @@ global.dfail = (type, m, conn) => {
     }[type]
     if (msg) return conn.send2ButtonDoc(m.chat, msg, author, '💌 Creator', '.creator', '🎀 Menu', '.menu', fakes, adReply)
     let msgg = {
-    	unreg: '𝐇𝐚𝐢 𝐊𝐚𝐤 {conn.getName(m.sender)} 𝐊𝐚𝐤𝐚 𝐇𝐚𝐫𝐮𝐬 𝐃𝐚𝐟𝐭𝐚𝐫 𝐓𝐞𝐫𝐥𝐞𝐛𝐢𝐡 𝐃𝐚𝐡𝐮𝐥𝐮 𝐀𝐠𝐚𝐫𝐚 𝐁𝐢𝐬𝐚 𝐆𝐮𝐧𝐚𝐤𝐚𝐧 𝐅𝐢𝐭𝐮𝐫 𝐈𝐧𝐢
+    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ 👋\nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
 }
