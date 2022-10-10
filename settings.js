@@ -1,29 +1,36 @@
-// S C R I P T  O R I  B Y  Bochilgaming 🔭
-// Ditulis Ulang Oleh ImYanXiao
-// Credits, jangan dihapus atau diubah!
 
-// - - THANKS TO - -
-// • Allah SWT
-// • Nurutomo
-// • Bochilgaming
-// • Rominaru
-// • Kannachann
-// • FahriAdison
-// • The.Sad.Boy01
-// • Rlxfly
-// • Rasel comel
-// • ImYanXiao
-// • Xtreshe (Beban)
-// • Dll
+/*
+⫰⫯ 𝑵𝒐𝒕𝒆 : 𝑲𝒂𝒍𝒂𝒖 𝑴𝒂𝒖 𝑫𝒊 𝑯𝒂𝒑𝒖𝒔 𝑴𝒊𝒌𝒊𝒓 𝑫𝒖𝒍𝒖 𝑵𝒈𝒂𝒃 𝑺𝒊𝒂𝒑𝒂 𝒀𝒂𝒏𝒈 𝑩𝒊𝒌𝒊𝒏 𝑺𝒄𝒓𝒊𝒑𝒕 𝑫𝒂𝒏 𝑴𝒆𝒏𝒈𝒆𝒅𝒊𝒕 𝑵𝒚𝒂
 
-//[!] Jangan Lupa Ganti Ownernya
+𝐀𝐮𝐭𝐡𝐨𝐫 : 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈
+𝐖𝐚 : 085786211623 / 0882007324217
+𝐛𝐚𝐬𝐞 : 𝑩𝒐𝒄𝒉𝒊𝒍 𝑮𝒂𝒎𝒊𝒏𝒈
+𝐌𝐲 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 : 10 𝑶𝒌𝒕𝒐𝒃𝒆𝒓 2022
+
+⫹❰⫺ 𝐵𝐼𝐺 𝑇𝐻𝐴𝑁𝐾𝑆 𝑇𝑂 ⫹❱⫺
+⭝ 𝑨𝒍𝒍𝒂𝒉 𝒀𝒂𝒏𝒈 𝑴𝒂𝒉𝒂 𝑬𝒔𝒂
+⭝ 𝑶𝒓𝒂𝒏𝒈 𝑻𝒖𝒂
+⭝ 𝑻𝒆𝒎𝒆𝒏 𝑮𝒘
+⭝ 𝒀𝒂𝒏𝒈 𝑼𝒅𝒂𝒉 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒖𝒂
+
+⫹⫺ 𝑇𝒉𝑒 𝑁𝑎𝑚𝑒 𝑇𝒉𝑎𝑡 𝐻𝑒𝑙𝑝𝑒𝑑 𝑀𝑒 ⫹⫺
+⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔
+⭝ 𝑨𝒅𝒊𝒘𝒂𝒋𝒊𝒔𝒉𝒊𝒏𝒈
+⭝ 𝑹𝒊𝒔𝒎𝒂𝑩𝒐𝒕𝒛 𝑶𝒇𝒇𝒄
+⭝ 𝑱𝒂𝒓𝒐𝒕 𝑶𝒇𝒇𝒄
+⭝ 𝑪𝒉𝒓𝒊𝒔𝒕𝒊𝒂𝒏 𝑰𝒅
+⭝ 𝑨𝒊𝒏𝒆
+⭝ 𝒁𝒆𝒆𝒐𝒏𝒆 𝑶𝒇𝒄
+⭝ 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈//
+
+//𝑮𝒂𝒏𝒕𝒊 𝑶𝒘𝒏𝒆𝒓 𝑵𝒚𝒂 𝑱𝒂𝒏 𝑳𝒖𝒑𝒂
 
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
 
-/*============= WAKTU =============*/
+//*============= WAKTU =============*//
 let wibh = moment.tz('Asia/Jakarta').format('HH')
     let wibm = moment.tz('Asia/Jakarta').format('mm')
     let wibs = moment.tz('Asia/Jakarta').format('ss')
@@ -33,7 +40,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
     let locale = 'id'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
-    // Offset    0 is  0.00
+    // Offset    0 is  0.00 
     // Offset  420 is  7.00
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
@@ -42,45 +49,84 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       month: 'long',
       year: 'numeric'
     })
-      
-    
-/*============== SOCIAL ==============*/
+     
+//⫹⫺============== 𝑺𝑶𝑺𝑰𝑨𝑳 ==============⫹⫺//
 
-// kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/krishosting' //Link Instagrammu
 global.sgh = 'https://github.com/krishosting569' //Link Githubmu
 global.sgc = 'https://chat.whatsapp.com/H7BG4LQJ7DJ0yILbbj4dI2'
 global.sdc = '-' //Isi Pake Link Discordmu Kalo Gada Biarin aja
 global.snh = 'https://nhentai.net/g/Harammek🗿' //Hmmm, Ini boleh kalian isi terserah :v
 
-/*============== PAYMENT ==============*/
-global.pdana = '0882007324218' //dana
-global.povo = '0882007324218' //ovo
-global.pgopay = '0882007324218' //gopay
-global.plinkaja = '0882007324218' //link aja
-global.ppulsa = '0882007324218' //telkomsel
-global.ppulsa2 = '085786211623' // kalau ada kartu lain isi aja
-global.psaweria = 'https://saweria.com/kosong'
-
-/*============== NOMOR ==============*/
-global.nomorbot = '6288239337467' //Nomor Bot
-global.nomorown = '6285786211623' //Nomor Owner
-global.namebot = 'BOTZ-KRIS' //Nama Bot
-global.nameown = 'KRIS HOSTING' // Nama Owner
-
-
-/*============== STAFF ==============*/
+//⫹⫺============== 𝑰𝑵𝑭𝑶 𝑩𝑶𝑻𝒁 ==============⫹⫺//
 global.owner = [
-  ['6285786211623', 'KRIS HOSTING 🅥⁩ 🎐', true] //Ganti jd nomormu sama Namamu
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
-global.mods =   ['628884928647'] // Want some help?
-global.prems =  ['628884928647'] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+  ['6285786211623', '𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈', true]
+global.namebot = '𝑲𝒓𝒊𝒔𝑩𝒐𝒕𝒛-𝑴𝒅
+global.nameown = '𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈
+global.mods = ['6285786211623']
+global.prems = ['6285786211623']
+global.nomorbot = '62882007324217'
+global.nomorown = '6285786211623'
+
+//⫹⫺============== 𝑾𝑨𝑻𝑬𝑹𝑴𝑨𝑵𝑰𝑲 ==============⫹⫺//
+
+global.wm = '                「 KRIS HOSTING  」' //Main Watermark
+global.wm2 = '✰ 𝑲𝒓𝒊𝒔𝑯𝒐𝒔𝒕𝒊𝒏𝒈' // 𝑮𝒂𝒏𝒕𝒊 𝑱𝒂𝒅𝒊 𝑵𝒂𝒎𝒂 𝑩𝒐𝒕 / 𝑵𝒂𝒎𝒂 𝑲𝒂𝒍𝒊𝒂𝒏
+global.wm3 = '✰ 𝑲𝒓𝒊𝒛𝑩𝒐𝒕𝒛-𝑴𝒅' //𝑮𝒂𝒏𝒕𝒊 𝑻𝒆𝒓𝒔𝒆𝒓𝒂𝒉
+global.botdate = `︎✰ 𝗛𝗮𝗿𝗶: ${week} ${date}`
+global.bottime = `𝗪𝗮𝗸𝘁𝘂 : ${wktuwib}`
+global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 𝑲𝒓𝒊𝒔 𝑩𝒐𝒕𝒛'
+global.author = global.wm
+global.logo = 'https://ibb.co/17RY7x9' 
+
+//⫹⫺============= 𝑵𝑶𝑴𝑶𝑹 𝑫𝑶𝑵𝑨𝑺𝑰 =============⫹⫺//
+
+global.pdana = '0882007324217' //𝑮𝒂𝒏𝒕𝒊 𝑱𝒂𝒅𝒊 𝑵𝒐 𝑫𝒂𝒏𝒂 𝑲𝒂𝒍𝒊𝒂𝒏
+global.povo = '085786211623' //𝑰𝒏𝒊 𝑱𝒖𝒈𝒂
+global.pgopay = '0882007324217'
+global.plinkaja = '085786211623' 
+global.ppulsa = '0882007324217'
+global.ppulsa2 = '085786211623'
+global.psaweria = '0882007324217'
+//Wajib Di Isi Biar Ga Eror
 
 
+//⫹⫺============= 𝑯𝑰𝑨𝑺𝑨𝑵 =============⫹⫺//
+// 𝑫𝑬𝑭𝑨𝑼𝑳𝑻 𝑴𝑬𝑵𝑼
+
+global.dmenut = 'ଓ═┅═━–〈' //top
+global.dmenub = '┊↬' //body
+global.dmenub2 = '┊' //body for info cmd on Default menu
+global.dmenuf = '┗––––––––––✦' //footer
+
+// 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑴𝑬𝑵𝑼
+global.dashmenu = '┅━━━═┅═❏ *ღ 𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿 ღ* ❏═┅═━━━┅'
+global.cmenut = '❏––––––『'                       //top
+global.cmenuh = '』––––––'                        //header
+global.cmenub = '┊❀'                            //body
+global.cmenuf = '┗━═┅═━––––––๑\n'                //footer
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
+global.pmenus = '┊'                              //pembatas menu selector
+
+global.htki = '––––––『' // Hiasan Titile (KIRI)
+global.htka = '』––––––' // Hiasan Title  (KANAN)
+global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
+global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
+global.htjava = '⫹⫺'    //hiasan Doang :v
+global.hsquere = ['⛶','❏','⫹⫺']
+
+//⫹⫺============= 𝑺𝑻𝑰𝑪𝑲𝑬𝑹 𝑾𝑴 =============⫹⫺//
+global.stickpack = '.'
+global.stickauth = `𝑲𝒓𝒊𝒔𝑩𝒐𝒕𝒛-𝑴𝒅 Whatsapp BOT\nwa.me/${global.nomorbot}`
+global.packname = '𝑲𝒓𝒊𝒔𝑩𝒐𝒕𝒛-𝑴𝒅'
+global.packname2 = '𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈'
+
+global.multiplier = 38 // The higher, The harder levelup
+
+//⫹⫺============= 𝑾𝑬𝑩𝑺𝑰𝑻𝑬 𝑨𝑷𝑰 =============⫹⫺//
 global.zenzkey = 'b8040941f7'
 global.lolkey = 'e54205a4ca2caa368cc067bb' 
-/*============== API ==============*/
+//⫹⫺============= 𝑨𝑷𝑰 =============⫹⫺//
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -118,21 +164,7 @@ global.APIKeys = { // APIKey Here
   'https://violetics.pw': 'beta',
   'https://ziy.herokuapp.com' : 'xZiyy'
 }
-// Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
-
-/*============== WATERMARK ==============*/
-global.wm = '                「 KRIS HOSTING  」' //Main Watermark
-global.wm2 = '_KRIS HOSTING_'
-global.wm3 = '⫹⫺ BOTZ-KRIS '
-global.botdate = `⫹⫺ 𝗛𝗮𝗿𝗶: ${week} ${date}`
-global.bottime = `𝗪𝗮𝗸𝘁𝘂 : ${wktuwib}`
-global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
-global.author = global.wm
-global.logo = 'https://ibb.co/17RY7x9'
-
-
-
-/*============== LOGO ==============*/
+//⫹⫺============= 𝑳𝑶𝑮𝑶 =============⫹⫺//
 global.thumb = 'https://telegra.ph/file/0c6ff83f2adbcf4693314.gif' //Main Thumbnail
 global.thumb2 = 'https://telegra.ph/file/26b515d170f1e599f78a7.jpg'
 global.thumbbc = 'https://telegra.ph/file/05f874dc87f7e27fa8127.jpg' //For broadcast
@@ -347,11 +379,11 @@ global.flaaa = [
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='] 
 
-/*============== TEXT ==============*/
+//⫹⫺============= 𝑻𝑬𝑿𝑻 =============⫹⫺//
 global.wait = '```「▰▰▰▱▱▱▱▱▱▱」Loading...```'
 global.eror = '```404 error```'
 
-/*=========== TYPE DOCUMENT ===========*/
+//⫹⫺============= 𝑫𝑶𝑪𝑼𝑴𝑬𝑵𝑻 =============⫹⫺//
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
@@ -361,44 +393,13 @@ global.djson = 'application/json'
 
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
-/*=========== FAKE SIZE ===========*/
+//⫹⫺============= 𝑭𝑨𝑲𝑬 𝑺𝑰𝒁𝑬 =============⫹⫺//
 global.fsizedoc = '99999999999999' // default 10TB
 global.fpagedoc = '999'
 
-/*=========== HIASAN ===========*/
-// DEFAULT MENU
-global.dmenut = 'ଓ═┅═━–〈' //top
-global.dmenub = '┊↬' //body
-global.dmenub2 = '┊' //body for info cmd on Default menu
-global.dmenuf = '┗––––––––––✦' //footer
-
-// COMMAND MENU
-global.dashmenu = '┅━━━═┅═❏ *ღ 𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿 ღ* ❏═┅═━━━┅'
-global.cmenut = '❏––––––『'                       //top
-global.cmenuh = '』––––––'                        //header
-global.cmenub = '┊❀'                            //body
-global.cmenuf = '┗━═┅═━––––––๑\n'                //footer
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '┊'                              //pembatas menu selector
-
-global.htki = '––––––『' // Hiasan Titile (KIRI)
-global.htka = '』––––––' // Hiasan Title  (KANAN)
-global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
-global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
-global.htjava = '⫹⫺'    //hiasan Doang :v
-global.hsquere = ['⛶','❏','⫹⫺']
-
-/*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `IBNU-MD  Whatsapp BOT\nwa.me/${global.nomorbot}`
-global.packname = 'IBNU-MD'
-global.packname2 = ' IBNU OFFICIAL 🅥⁩ '
-
-global.multiplier = 38 // The higher, The harder levelup
-
-/*============== EMOJI ==============*/
+//⫹⫺============= 𝑬𝑴𝑶𝑱𝑰 =============⫹⫺//
 global.rpg = {
-  emoticon(string) {
+emoticon(string) {
     string = string.toLowerCase()
     let emot = {
       level: '📊',
