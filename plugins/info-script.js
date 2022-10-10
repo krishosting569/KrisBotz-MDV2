@@ -2,23 +2,18 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow*
+let str = `𝐒𝐜𝐫𝐢𝐩𝐭 𝐈𝐧𝐢 𝐃𝐢 𝐉𝐮𝐚𝐥 𝐊𝐚𝐤 𝐇𝐚𝐫𝐠𝐚 𝐌𝐮𝐫𝐚𝐡 𝐀𝐧𝐭𝐢 𝐄𝐫𝐨𝐫`
 
-Pengen mentahan nya ?
-Nih ada santai bro....
-https://github.com/ImYanXiao/Elaina-MultiDevice
+𝐂𝐨𝐧𝐭𝐚𝐤 𝐎𝐰𝐧𝐞𝐫
+wa.me/6285786211623
 
-Pengen yang udah di recode oleh owner?
-Script bot ini dijual bila kalian mau bisa chat owner
-
-wa.me/6282127487538`
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
+let wibu = `https://telegra.ph/file/95f389477150f7ac12311.png` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/_ctzhid",
     mediaType: "VIDEO",
     description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
-    title: 'WH-MODS-DEV-V1 MultiDevice',
+    title: ' ${namebot} ',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
