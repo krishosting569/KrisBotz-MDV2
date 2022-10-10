@@ -1,7 +1,12 @@
-let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `
+import fetch from 'node-fetch'
+let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
+//let handler = async(m, { conn, text, usedPrefix, command }) => {
+//let pp = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image')
+
+let str = `${global.wm}
+
 ┌─「 Donasi • Pulsa 」
 │ • *Smartfren:* [${global.ppulsa}]
-│ • *Indosat:* [${global.ppulsa2}]
 ❏────
 
 ┌─「 Donasi • Non Pulsa 」
@@ -9,16 +14,22 @@ let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `
 │ • *Gopay:* [${global.pgopay}]
 │ • *Ovo:* [${global.povo}]
 │ • *Link Aja:* [${global.plinkaja}]
-❏────
-`.trim(), wm, 'Menu', usedPrefix + 'menu', m) // Tambah sendiri kalo mau
+❏────`
+let wibu = `https://telegra.ph/file/47260bc3445f36d4e00cf.jpg` 
+let thumb = await(await fetch(wibu)).buffer()
+conn.sendButtonDoc(m.chat, str, wm,'𝐒𝐞𝐰𝐚 𝐁𝐨𝐭','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://Instagram.com/_",
+    mediaType: "VIDEO",
+    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
+    title: '𝐃𝐨𝐧𝐚𝐬𝐢',
+    body: wm,
+    thumbnail: thumb,
+    sourceUrl: sig
+  }
+  } }) 
+          }
 handler.help = ['donasi']
-handler.tags = ['about']
+handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
 
-module.exports = handler
-Footer
-© 2022 𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝, Inc.
-Footer navigation
-Terms
-Privacy
-Security
+export default handler
