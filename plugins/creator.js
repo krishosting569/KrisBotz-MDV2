@@ -20,19 +20,19 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
 ${htjava} *💌 Nama* : ${nameown}
-${htjava} *✉️ Nama RL* : Kepo
-${htjava} *♂️ Gender* : Boys
+${htjava} *✉️ Nama RL* : $namarlown}
+${htjava} *♂️ Gender* : ${genderown}
 ${htjava} *🕋 Agama* : ${agamaown}
-${htjava} *⏰ Tanggal lahir* : Vrivate
+${htjava} *⏰ Tanggal lahir* : ${tanggallahirown}
 ${htjava} *🎨 Umur* : ${umurown}
-${htjava} *🧮 Kelas* : Kepo Anda
+${htjava} *🧮 Kelas* : ${kelasown}
 ${htjava} *🧩 Hobby* : ${hobyown}
 ${htjava} *💬 Sifat* : ${sifatown}
 ${htjava} *🗺️ Tinggal* : ${tinggalown}
 ${htjava} *❤️ Waifu* : -
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
-${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
+${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${linkgithub}
 •·––––––––––––––––––––––––––·•
 `
   let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
