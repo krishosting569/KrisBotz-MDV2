@@ -1,27 +1,23 @@
+//Credits Jangan Dihapus
+//Thanks To Papah-Chan
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `𝐒𝐜𝐫𝐢𝐩𝐭 𝐈𝐧𝐢 𝐃𝐢 𝐉𝐮𝐚𝐥 𝐊𝐚𝐤 𝐇𝐚𝐫𝐠𝐚 𝐌𝐮𝐫𝐚𝐡 𝐀𝐧𝐭𝐢 𝐄𝐫𝐨𝐫`
-
-𝐂𝐨𝐧𝐭𝐚𝐤 𝐎𝐰𝐧𝐞𝐫
-wa.me/6285786211623
-
-let wibu = `https://telegra.ph/file/95f389477150f7ac12311.png` 
+let str = `*https://chat.whatsapp.com/LnYJ7NyXL4O8p2tEsdcuwI*`
+let wibu = `https://hadi-api.herokuapp.com/api/loli` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/_ctzhid",
-    mediaType: "VIDEO",
-    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
-    title: ' ${namebot} ',
-    body: wm,
+conn.sendButtonDoc(m.chat, str, wm,'ᴏᴋ','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://chat.whatsapp.com/LnYJ7NyXL4O8p2tEsdcuwI",
+    title: '𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝',
+    body: 'want source code?',
     thumbnail: thumb,
-    sourceUrl: sgc
+    sourceUrl: sig
   }
   } }) 
           }
-handler.help = ['source code']
-handler.tags = ['info']
+handler.help = ['sc', 'script']
+handler.tags = ['info', 'main']
 handler.command =  /^(script|sc)$/i
 
 export default handler
