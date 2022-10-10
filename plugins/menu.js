@@ -333,6 +333,8 @@ if (teks == 'menbalas') tags = {
         {title: `📑 ${pmenus} 〚 Store 〛-𐑂`, rowId: ".? store", description: "╰► Anak jebeh ya kamu kak?"},
         {title: `📑 ${pmenus}  『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
         {title: `🎧 ${pmenus} 『 Sound Kane Menu 』`, rowId: ".soundkanemenu", description: "Kumpulan 24 Sound"},
+        {title: `🎧 ${pmenus} 『 Host 』`, rowId: ".soundkanemenu", description: "Menampilkan Host Advanced"},
+        {title: `🎧 ${pmenus} 『 Jadi Bot 』`, rowId: ".soundkanemenu", description: "Menampilkan Qr Jadi Bot"},
         {title: `🏢 ${pmenus} 『 Group 』`, rowId: ".? group", description: "Only Groups"},
         {title: `👑 ${pmenus} 『Admin 』`, rowId: ".? admin", description: "Only Admin Group"},
         {title: `🗂️ ${pmenus} 『 Database 』`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
