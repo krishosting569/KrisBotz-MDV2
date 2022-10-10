@@ -7,7 +7,9 @@
 <a href="#"><img title="KRIZYZBOT MULTI DEVICE" src="https://img.shields.io/badge/KRISBOTZ MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/DikaArdnt"><img title="Author" src="https://img.shields.io/badge/Author-WHMODS-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/BochilGaming"><img title="Author" src="https://img.shields.io/badge/BaseOri-Bochil Gaming-red.svg?style=for-the-badge&logo=github"></a>
+
+
 <a href="https://github.com/KrisHost-ofc/Alphabot-Md"><img title="Recode" src="https://img.shields.io/badge/Recode-KrisHost-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
