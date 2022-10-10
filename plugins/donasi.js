@@ -6,7 +6,8 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let str = `${global.wm}
 
 ┌─「 Donasi • Pulsa 」
-│ • *Telkomsel:* [${global.ppulsa}]
+│ • *Smartfren:* [${global.ppulsa}]
+│ • *Indosat:* [${global.ppulsa2}]
 ❏────
 
 ┌─「 Donasi • Non Pulsa 」
@@ -15,12 +16,12 @@ let str = `${global.wm}
 │ • *Ovo:* [${global.povo}]
 │ • *Link Aja:* [${global.plinkaja}]
 ❏────`
-let wibu = `https://telegra.ph/file/9cb8e5c8ffb2d6939cbcc.jpg` 
+let wibu = `` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://github.com/krishosting569",
+    mediaUrl: "https://telegra.ph/file/47260bc3445f36d4e00cf.jpg",
     mediaType: "VIDEO",
-    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
+    description: "https://www.krishosting", 
     title: 'DONASI',
     body: wm,
     thumbnail: thumb,
