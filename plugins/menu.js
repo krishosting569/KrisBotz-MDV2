@@ -1,25 +1,5 @@
-//⫰⫯ 𝑵𝒐𝒕𝒆 : 𝑲𝒂𝒍𝒂𝒖 𝑴𝒂𝒖 𝑫𝒊 𝑯𝒂𝒑𝒖𝒔 𝑴𝒊𝒌𝒊𝒓 𝑫𝒖𝒍𝒖 𝑵𝒈𝒂𝒃 𝑺𝒊𝒂𝒑𝒂 𝒀𝒂𝒏𝒈 𝑩𝒊𝒌𝒊𝒏 𝑺𝒄𝒓𝒊𝒑𝒕 𝑫𝒂𝒏 𝑴𝒆𝒏𝒈𝒆𝒅𝒊𝒕 𝑵𝒚𝒂
-
-//𝐀𝐮𝐭𝐡𝐨𝐫 : 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈
-//𝐖𝐚 : 085786211623 / 0882007324217
-//𝐛𝐚𝐬𝐞 : 𝑩𝒐𝒄𝒉𝒊𝒍 𝑮𝒂𝒎𝒊𝒏𝒈
-//𝐌𝐲 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 : 10 𝑶𝒌𝒕𝒐𝒃𝒆𝒓 2022
-
-//⫹❰⫺ 𝐵𝐼𝐺 𝑇𝐻𝐴𝑁𝐾𝑆 𝑇𝑂 ⫹❱⫺
-//⭝ 𝑨𝒍𝒍𝒂𝒉 𝒀𝒂𝒏𝒈 𝑴𝒂𝒉𝒂 𝑬𝒔𝒂
-//⭝ 𝑶𝒓𝒂𝒏𝒈 𝑻𝒖𝒂
-//⭝ 𝑻𝒆𝒎𝒆𝒏 𝑮𝒘
-//⭝ 𝒀𝒂𝒏𝒈 𝑼𝒅𝒂𝒉 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒖𝒂
-
-//⫹⫺ 𝑇𝒉𝑒 𝑁𝑎𝑚𝑒 𝑇𝒉𝑎𝑡 𝐻𝑒𝑙𝑝𝑒𝑑 𝑀𝑒 ⫹⫺
-//⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔
-//⭝ 𝑨𝒅𝒊𝒘𝒂𝒋𝒊𝒔𝒉𝒊𝒏𝒈
-//⭝ 𝑹𝒊𝒔𝒎𝒂𝑩𝒐𝒕𝒛 𝑶𝒇𝒇𝒄
-//⭝ 𝑱𝒂𝒓𝒐𝒕 𝑶𝒇𝒇𝒄
-//⭝ 𝑪𝒉𝒓𝒊𝒔𝒕𝒊𝒂𝒏 𝑰𝒅
-//⭝ 𝑨𝒊𝒏𝒆
-//⭝ 𝒁𝒆𝒆𝒐𝒏𝒆 𝑶𝒇𝒄
-//⭝ 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈
+// Script Ori By BochilGaming
+// Ditulis Ulang Oleh KrisHosting
 
 import { promises } from 'fs'
 import { join } from 'path'
@@ -32,6 +12,7 @@ const { makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromCon
 
 const defaultMenu = {
   before: `
+
 ╭─────═[ 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 ]═─────⋆
 │╭────────────────···
 │   ⬡ 𝐍𝐚𝐦𝐚 𝐁𝐨𝐭:* %me
@@ -55,7 +36,7 @@ const defaultMenu = {
 │  ⬡ 𝐗𝐩: %exp / %maxexp 
 │  ⬡ 𝐓𝐨𝐭𝐚𝐥 𝐗𝐩: %totalexp
 │ ╰────────────────···
-╰──────────═┅═──────
+╰──────────═┅═──────⬣
 %readmore
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
@@ -319,9 +300,6 @@ if (teks == 'menbalas') tags = {
         {title: `📑 ${pmenus} 〚 Store 〛-𐑂`, rowId: ".? store", description: "╰► Anak jebeh ya kamu kak?"},
         {title: `📑 ${pmenus}  『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
         {title: `🎧 ${pmenus} 『 Sound Kane Menu 』`, rowId: ".soundkanemenu", description: "Kumpulan 24 Sound"},
-        {title: `🎧 ${pmenus} 『 Host 』`, rowId: ".soundkanemenu", description: "Menampilkan Host Advanced"},
-        {title: `🎧 ${pmenus} 『 Jadi Bot 』`, rowId: ".soundkanemenu", description: "Mau Jadi Bot "},
-        {title: `🏢 ${pmenus} 『 Absen 』`, rowId: ".? group", description: "Mau Absen Ngab"},
         {title: `🏢 ${pmenus} 『 Group 』`, rowId: ".? group", description: "Only Groups"},
         {title: `👑 ${pmenus} 『Admin 』`, rowId: ".? admin", description: "Only Admin Group"},
         {title: `🗂️ ${pmenus} 『 Database 』`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
@@ -680,8 +658,8 @@ const listMessage = {
       
     //------------------- 2BUTTON LOCATION
     conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
-      ['ᴍᴇɴᴜ ${namebot}', `${_p}menu`],
-      ['sᴘᴇᴇᴅ`${_p}speedtest`]
+      ['🎏 ᴍᴇɴᴜ', `${_p}menu`],
+      ['⚡ sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
     ], m, {asLocation: true})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
@@ -725,16 +703,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
-    res = "Pagi Kak"
+    res = "Pagi Kak 🌄"
   }
   if (time >= 10) {
-    res = "Siang Kak"
+    res = "Siang Kak ☀️"
   }
   if (time >= 15) {
-    res = "Sore Kak"
+    res = "Sore Kak 🌇"
   }
-  if (time >= 1) {
-    res = "Malam Kak"
+  if (time >= 18) {
+    res = "Malam Kak 🌙"
   }
   return res
 }
