@@ -269,10 +269,9 @@ if (teks == 'menbalas') tags = {
 
 let usrs = db.data.users[m.sender]
 
-   const sections = [
+const sections = [
    {
-	title: `${htki} MAIN ${htka}`,
-    rows: [title: `${htki} MAIN ${htka}`,
+    title: `${htki} MAIN ${htka}`,
     rows: [
         {title: `⚡ ${pmenus}〚 SPEED BOT 』`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
         {title: `💌 ${pmenus} 『 OWNER BOT 』`, rowId: ".owner", description: "Menampilkan List owner BOT"},
@@ -363,7 +362,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │
-│ ▸ *Sumber :* YouTube KRIS BOTZ
+│ ▸ *Sumber :* YouTube KRIS HOSTING
 │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
@@ -565,7 +564,7 @@ const listMessage = {
 
     orderTitle: `▮Menu ▸`,
 
-    thumbnail: await (await fetch(flaaa + 'Loading')).buffer(), //Gambarnye
+    thumbnail: await (await fetch(fla + 'Loading')).buffer(), //Gambarnye
 
     sellerJid: '0@s.whatsapp.net' 
 
@@ -593,7 +592,7 @@ const listMessage = {
      }
     })*/
     
-    //------------------ DOCUMENT
+   //------------------ DOCUMENT
     let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
     let d2 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
     let d3  = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
