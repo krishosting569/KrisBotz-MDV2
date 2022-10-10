@@ -10,16 +10,15 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
 📮 *Note:*
-• Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
 • Owner Hanya merespon yang berkaitan dengan BOT
 • No Telp`
 
 //------------ BIO
-let ppown = 'https://telegra.ph/file/cce9ab4551f7150f1970d.jpg'
+let ppown = 'https://telegra.ph/file/a4c5d44dabfb5c4b78d6d.jpg'
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : Krisdi Firmansyah
+${htjava} *💌 Nama* : ${nameown}
 ${htjava} *✉️ Nama RL* : Rahasia🗿
 ${htjava} *♂️ Gender* : Boys
 ${htjava} *🕋 Agama* : Islam
@@ -43,6 +42,7 @@ const sections = [
 	rows: [
 	    {title: "📱 • Nomor", rowId: ".owner nomor"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
+	{title: "🌎 • Script", rowId: ".sc"},
 	]
     },{
 	title: `${htjava} SUPPORT ME –––––––·•`,
@@ -58,7 +58,7 @@ const listMessage = {
   text: teks,
   footer: null,
   title: `${htki} *OWNER* ${htka}`,
-  buttonText: "MENU KRIS!",
+  buttonText: "Click Here !",
   sections
 }
 
