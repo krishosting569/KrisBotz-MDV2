@@ -321,24 +321,32 @@ if (teks == 'menbalas') tags = {
         },
 ]
 
-let tek = `✧────···[ Dashboard ]···────✧
-*${ucapan()} ${conn.getName(m.sender)}*
-╭━━━━━━━━━━━━━━━━┈─✧
-┴
-│⬡ Aktif selama ${mpt}
-│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│⬡ Prefix : [ ${_p} ]
-│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
-│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┬
-├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *ᴀᴜᴛʜᴏʀ :* Kris Hosting
-┴ ▸ *ᴏᴡɴᴇʀ :* Kris Hosting
-✧
-┬ 📌 Note :
-│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
-╰━━━━━━━━━━━━━━━━┈─◂`
+let tek = `𝑺𝑬𝑳𝑨𝑴𝑨𝑻 *${ucapan()} ${conn.getName(m.sender)}*
+
+╭─────═[ 𝑼𝑺𝑬𝑹 𝑰𝑵𝑭𝑶 ]═─────⋆
+│╭────────────────···
+│  *• 𝑵𝒂𝒎𝒆:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+│  *• 𝑻𝒂𝒈𝒔:* @${m.sender.split`@`[0]}
+│  *• 𝑺𝒕𝒂𝒕𝒖𝒔:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+│  *• 𝑳𝒊𝒎𝒊𝒕:*  ${usrs.limit} │╰────────────────···
+┠───────𝑳𝑰𝑺𝑻 𝑴𝑬𝑵𝑼──────
+│ シ︎✔︎ 𝑮𝒂𝒎𝒆 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑳𝒐𝒈𝒐 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑴𝒂𝒏𝒇𝒆𝒔 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑹𝒑𝒈 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑨𝒏𝒊𝒎𝒆 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑺𝒐𝒖𝒏𝒅 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑺𝒐𝒖𝒏𝒅 𝑲𝒂𝒏𝒆 𝑴𝒆𝒏𝒖,
+│ シ︎✔︎ 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑩𝒆𝒓𝒊𝒕𝒂 𝑴𝒆𝒏𝒖
+│ シ︎✔︎ 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖
+│ 
+│ ➪ 𝑵𝒐𝒕𝒆 : 𝑲𝒍𝒊𝒌 𝑩𝒖𝒕𝒕𝒐𝒏 𝑫𝒊 𝑩𝒂𝒘𝒂𝒉 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒂𝒏𝒑𝒊𝒍𝒌𝒂𝒏 𝑴𝒆𝒏𝒖
+│ ➪ 𝑵𝒂𝒎𝒆 𝑩𝒐𝒕𝒛 : ${nameown}
+│ ➪ 𝑶𝒘𝒏𝒆𝒓 𝑩𝒐𝒕𝒛 : ${namebot}
+╰──────────═┅═──────⬣`
 const listMessage = {
   text: tek,
   footer: wm2,
