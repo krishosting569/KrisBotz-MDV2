@@ -73,6 +73,11 @@ global.nomorbot = '62XXXXXXXXXXX'
 global.nomorown = '6285786211623'
 global.namebot = '𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝'
 global.nameown = '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠'
+global.umurown = '15'
+global.tinggalown = 'Jawa Tengah Cikamuning' 
+global.hobyown = 'Membikin Bot'
+global.sifatown = 'Baik Penolong Penyayang'
+global.agamaown = 'Islam'
 
 /*============== Github Thanks To ==============*/
 global.namagithub = 'krishosting569' // nama github lu
