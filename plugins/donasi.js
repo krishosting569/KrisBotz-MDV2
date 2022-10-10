@@ -1,10 +1,4 @@
-import fetch from 'node-fetch'
-let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
-//let handler = async(m, { conn, text, usedPrefix, command }) => {
-//let pp = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image')
-
-let str = `${global.wm}
-
+let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `
 ┌─「 Donasi • Pulsa 」
 │ • *Smartfren:* [${global.ppulsa}]
 │ • *Indosat:* [${global.ppulsa2}]
@@ -15,22 +9,16 @@ let str = `${global.wm}
 │ • *Gopay:* [${global.pgopay}]
 │ • *Ovo:* [${global.povo}]
 │ • *Link Aja:* [${global.plinkaja}]
-❏────`
-let wibu = `` 
-let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://telegra.ph/file/47260bc3445f36d4e00cf.jpg",
-    mediaType: "VIDEO",
-    description: "https://www.krishosting", 
-    title: 'DONASI',
-    body: wm,
-    thumbnail: thumb,
-    sourceUrl: sig
-  }
-  } }) 
-          }
+❏────
+`.trim(), wm, 'Menu', usedPrefix + 'menu', m) // Tambah sendiri kalo mau
 handler.help = ['donasi']
-handler.tags = ['info']
+handler.tags = ['about']
 handler.command = /^dona(te|si)$/i
 
-export default handler
+module.exports = handler
+Footer
+© 2022 𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝, Inc.
+Footer navigation
+Terms
+Privacy
+Security
