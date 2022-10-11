@@ -6,7 +6,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let str = `${global.wm}
 
 ╔═══════════════════
-║ _*DONASI UNTUK*_  ${namebot} ×͜×
+║ _*DONASI UNTUK*_  ${nameown,} ×͜×
 ╠═══════════════════
 ║╭──❉ 〔 *𝗗𝗢𝗡𝗔𝗦𝗜* 〕 ❉──────
 ║│ • *Smartfren:* [${global.ppulsa}]
@@ -17,7 +17,7 @@ let str = `${global.wm}
 ║│ • *Link Aja:* [${global.plinkaja}]
 ║╰──────────────────
 ╰═══════════════════`
-let wibu = `krishosrimg.png` 
+let wibu = `https://telegra.ph/file/1a0f9117d37f4dcf63d8c.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "htpp://krishosnd/_ctzhid",
