@@ -4,7 +4,8 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://chat.whatsapp.com/LnYJ7NyXL4O8p2tEsdcuwI*`
+let str = `*𝑺𝒄𝒓𝒊𝒑𝒕 𝑰𝒏𝒊 𝑫𝒊 𝑱𝒖𝒂𝒍 𝑵𝒈𝒂𝒃 𝑴𝒂𝒖 𝑩𝒆𝒍𝒊?*
+            wa.me/6285786211623`
 let wibu = `https://hadi-api.herokuapp.com/api/loli` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'ᴏᴋ','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
