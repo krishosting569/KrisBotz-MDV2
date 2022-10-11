@@ -1,35 +1,21 @@
-import fetch from 'node-fetch'
-let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
-//let handler = async(m, { conn, text, usedPrefix, command }) => {
-//let pp = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image')
-
-let str = `${global.wm}
-
-┌─「 Donasi • Pulsa 」
-│ • *Smartfren:* [${global.ppulsa}]
-❏────
-
-┌─「 Donasi • Non Pulsa 」
-│ • *Dana:* [${global.pdana}]
-│ • *Gopay:* [${global.pgopay}]
-│ • *Ovo:* [${global.povo}]
-│ • *Link Aja:* [${global.plinkaja}]
-❏────`
-let wibu = `https://telegra.ph/file/47260bc3445f36d4e00cf.jpg` 
-let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'𝐒𝐞𝐰𝐚 𝐁𝐨𝐭','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/_",
-    mediaType: "VIDEO",
-    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
-    title: '𝐃𝐨𝐧𝐚𝐬𝐢',
-    body: wm,
-    thumbnail: thumb,
-    sourceUrl: sig
-  }
-  } }) 
-          }
+let fetch = require('node-fetch')
+let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), `
+*Allo mypren bantu donasi yuk supaya bot aktif selalu👋*
+╔═══════════════════
+║ _*DONASI UNTUK*_  ${nameown,} ×͜×
+╠═══════════════════
+║╭──❉ 〔 *𝗗𝗢𝗡𝗔𝗦𝗜* 〕 ❉──────
+║│ • *Smartfren:* [${global.ppulsa}]
+║│ • *Indosat:* [${global.ppulsa2}]
+║│ • *Dana:* [${global.pdana}]
+║│ • *Gopay:* [${global.pgopay}]
+║│ • *Ovo:* [${global.povo}]
+║│ • *Link Aja:* [${global.plinkaja}]
+║╰──────────────────
+╰═══════════════════
+`.trim(), footer, 'Owner', '.owner', 'Menu', '.menu')
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
 
-export default handler
+module.exports = handler
