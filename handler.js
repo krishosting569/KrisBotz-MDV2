@@ -1308,14 +1308,14 @@ export async function participantsUpdate({ id, participants, action }) {
     sourceUrl: sgc
      }}
   })*/
-  let welcom = 'https://telegra.ph/file/gaadagahaha.jpg'
+  let welcom = 'https://kris/file/gaadagahaha.sls'
 
-  let godbye = 'https://telegra.ph/file/hahmsnganhaha.jpg'
+  let godbye = 'https://krish/file/hahmsngan.sll'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'KRIS BOTZ', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://www.krishosting.ckm.my.id',
+    mediaUrl: 'https://gondksksks',
     mediaType: 2, 
     description: sgc,
-    title: "_welcome_",
+    title: "...",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig
@@ -1366,21 +1366,6 @@ export async function groupsUpdate(groupsUpdate) {
 /**
 Delete Chat
  */
-export async function deleteUpdate(message) {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.antidelete)
-            return
-            this.send2ButtonDoc(msg.key.remoteJid, `Terdeteksi *@${participant.split`@`[0]}* telah menghapus pesan.
-Untuk mematikan fitur ini, ketik
-*.off antidelete*
-
 Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
 *.delete*`, author, '🔖 Matikan Fitur', '.off antidelete', 'ℹ️ Menu', '.menu', msg, adReply)
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
