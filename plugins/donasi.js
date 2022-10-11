@@ -17,7 +17,7 @@ let str = `${global.wm}
 ║│ • *Link Aja:* [${global.plinkaja}]
 ║╰──────────────────
 ╰═══════════════════`
-let wibu = `https://telegra.ph/file/1a0f9117d37f4dcf63d8c.jpg` 
+let wibu = `krishosrimg.png` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "htpp://krishosnd/_ctzhid",
