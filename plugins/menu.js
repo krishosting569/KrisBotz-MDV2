@@ -1,5 +1,25 @@
-// Script Ori By BochilGaming
-// Ditulis Ulang Oleh KrisHosting
+//⫰⫯ 𝑵𝒐𝒕𝒆 : 𝑲𝒂𝒍𝒂𝒖 𝑴𝒂𝒖 𝑫𝒊 𝑯𝒂𝒑𝒖𝒔 𝑴𝒊𝒌𝒊𝒓 𝑫𝒖𝒍𝒖 𝑵𝒈𝒂𝒃 𝑺𝒊𝒂𝒑𝒂 𝒀𝒂𝒏𝒈 𝑩𝒊𝒌𝒊𝒏 𝑺𝒄𝒓𝒊𝒑𝒕 𝑫𝒂𝒏 𝑴𝒆𝒏𝒈𝒆𝒅𝒊𝒕 𝑵𝒚𝒂
+
+//𝐀𝐮𝐭𝐡𝐨𝐫 : 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈
+//𝐖𝐚 : 085786211623 / 0882007324217
+//𝐛𝐚𝐬𝐞 : 𝑩𝒐𝒄𝒉𝒊𝒍 𝑮𝒂𝒎𝒊𝒏𝒈
+//𝐌𝐲 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 : 10 𝑶𝒌𝒕𝒐𝒃𝒆𝒓 2022
+
+//⫹❰⫺ 𝐵𝐼𝐺 𝑇𝐻𝐴𝑁𝐾𝑆 𝑇𝑂 ⫹❱⫺
+//⭝ 𝑨𝒍𝒍𝒂𝒉 𝒀𝒂𝒏𝒈 𝑴𝒂𝒉𝒂 𝑬𝒔𝒂
+//⭝ 𝑶𝒓𝒂𝒏𝒈 𝑻𝒖𝒂
+//⭝ 𝑻𝒆𝒎𝒆𝒏 𝑮𝒘
+//⭝ 𝒀𝒂𝒏𝒈 𝑼𝒅𝒂𝒉 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒖𝒂
+
+//⫹⫺ 𝑇𝒉𝑒 𝑁𝑎𝑚𝑒 𝑇𝒉𝑎𝑡 𝐻𝑒𝑙𝑝𝑒𝑑 𝑀𝑒 ⫹⫺
+//⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔⸔
+//⭝ 𝑨𝒅𝒊𝒘𝒂𝒋𝒊𝒔𝒉𝒊𝒏𝒈
+//⭝ 𝑹𝒊𝒔𝒎𝒂𝑩𝒐𝒕𝒛 𝑶𝒇𝒇𝒄
+//⭝ 𝑱𝒂𝒓𝒐𝒕 𝑶𝒇𝒇𝒄
+//⭝ 𝑪𝒉𝒓𝒊𝒔𝒕𝒊𝒂𝒏 𝑰𝒅
+//⭝ 𝑨𝒊𝒏𝒆
+//⭝ 𝒁𝒆𝒆𝒐𝒏𝒆 𝑶𝒇𝒄
+//⭝ 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈//
 
 import { promises } from 'fs'
 import { join } from 'path'
@@ -15,15 +35,16 @@ const defaultMenu = {
 
 ╭─────═[ 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 ]═─────⋆
 │╭────────────────···
-│   ⬡ 𝐍𝐚𝐦𝐚 𝐁𝐨𝐭:* %me
-│   ⬡ 𝐌𝐨𝐝𝐞:* %mode
-│   ⬡ 𝐏𝐫𝐞𝐟𝐢𝐱:* [ *%_p* ]
-│   ⬡ 𝐁𝐚𝐢𝐥𝐲𝐞𝐬:* Multi Device
-│   ⬡ 𝐁𝐚𝐭𝐭𝐞𝐫𝐲:* ${conn.battery != undefined ? `$             {conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│   ⬡ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: %platform
-│   ⬡ 𝐓𝐲𝐩𝐞: Node.Js
-│   ⬡ 𝐔𝐩𝐭𝐢𝐦𝐞: %muptime
-│   ⬡ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: %rtotalreg dari %totalreg │╰────────────────···
+│  ⬡ 𝐍𝐚𝐦𝐚 𝐁𝐨𝐭:* %me
+│  ⬡ 𝐌𝐨𝐝𝐞:* %mode
+│  ⬡ 𝐏𝐫𝐞𝐟𝐢𝐱:* [ *%_p* ]
+│  ⬡ 𝐁𝐚𝐢𝐥𝐲𝐞𝐬:* Multi Device
+│  ⬡ 𝐁𝐚𝐭𝐭𝐞𝐫𝐲:* ${conn.battery != undefined ? `$             {conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│  ⬡ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: %platform
+│  ⬡ 𝐓𝐲𝐩𝐞: Node.Js
+│  ⬡ 𝐔𝐩𝐭𝐢𝐦𝐞: %muptime
+│  ⬡ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: %rtotalreg dari %totalreg
+│╰────────────────···
 ┠──────═[ 𝐈𝐍𝐅𝐎 𝐔𝐒𝐄𝐑 ]═─────⋆
 │╭────────────────···
 │  ⬡ 𝐍𝐚𝐦𝐞: %name
@@ -342,7 +363,7 @@ const listMessage = {
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `ʟɪsᴛ ᴍᴇɴᴜ ⎙`, 
+  buttonText: `MENU ${nameown} ⎙`, 
   sections
 }
   if (teks == '404') {
@@ -537,7 +558,7 @@ const listMessage = {
 
     }
 
-    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*▰▰▰▰▰▰▱ Loading*', ftrol) 
 
     
     //------------------< MENU >----------------
@@ -640,7 +661,7 @@ const listMessage = {
 } })*/
 
     //------------------- 2BUTTON VID
-   // conn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/c82d5c358495e8ef15916.mp4' }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text.trim(), footer: 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ɪᴍ-ʏᴀɴxɪᴀᴏ', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest⚡', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
+   // conn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/c82d5c358495e8ef15916.mp4' }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text.trim(), footer: 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ᴋʀɪs-ʜᴏsᴛɪɴɢ', templateButtons: [{ quickReplyButton: { displayText: 'Speedtest⚡', id: `${_p}speedtest` }}, { quickReplyButton: { displayText: 'Owner🎀', id: `${_p}owner` }} ] })
     
     //------------------- Payment MENU
     /*await conn.relayMessage(m.chat,  {
@@ -658,11 +679,11 @@ const listMessage = {
       
     //------------------- 2BUTTON LOCATION
     conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
-      ['🎏 ᴍᴇɴᴜ', `${_p}menu`],
-      ['⚡ sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
+      ['シ 𝐌𝐞𝐧𝐮︎ ', `${_p}menu`],
+      ['ఌ 𝐒𝐩𝐞𝐞𝐝𝐭𝐞𝐬𝐭︎ ', `${_p}speedtest`]
     ], m, {asLocation: true})
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'Maaf, ᴍᴇɴᴜ ʟᴀɢɪ ᴇʀᴏʀ', m)
     throw e
   }
 }
@@ -703,16 +724,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
-    res = "Pagi Kak 🌄"
+    res = " Sᴇʟᴀᴍᴀᴛ Pᴀɢɪ"
   }
   if (time >= 10) {
-    res = "Siang Kak ☀️"
+    res = "Sᴇʟᴀᴍᴀᴛ Sɪᴀɴɢ"
   }
   if (time >= 15) {
-    res = "Sore Kak 🌇"
+    res = "Sᴇʟᴀᴍᴀᴛ Sᴏʀᴇ"
   }
   if (time >= 18) {
-    res = "Malam Kak 🌙"
+    res = "Sᴇʟᴀᴍᴀᴛ Mᴀʟᴀᴍ"
   }
   return res
 }
