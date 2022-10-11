@@ -1199,7 +1199,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' ʟɪᴍɪᴛ ᴋᴀᴍᴜ ᴛᴇʀᴘᴀᴋᴀɪ ✔️')
+                        m.reply(+m.limit + ' 𝐋𝐢𝐦𝐢𝐭 𝐊𝐚𝐦𝐮 𝐓𝐞𝐫𝐩𝐚𝐤𝐚𝐢 ✔️')
                 }
                 break
             }
@@ -1308,11 +1308,11 @@ export async function participantsUpdate({ id, participants, action }) {
     sourceUrl: sgc
      }}
   })*/
-  let welcom = 'https://kris/file/krismsksjs.png'
+  let welcom = 'https://telegra.ph/file/gaadagahaha.jpg'
 
-  let godbye = 'https://kris/file/krismsksjs.png'
-  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : '𝙆𝙧𝙞𝙨𝘽𝙤𝙩𝙯-𝙈𝙙', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://krisjkodkridjdjdjdjd',
+  let godbye = 'https://telegra.ph/file/hahmsnganhaha.jpg'
+  conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'KRIS BOTZ', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://www.krishosting.ckm.my.id',
     mediaType: 2, 
     description: sgc,
     title: "𝒉𝒂𝒊",
