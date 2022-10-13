@@ -10,11 +10,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
 
-📮 *Note:*
-• Owner berhak blockir tanpa alasan
-• Berbicaralah yang sopan & tidak spam
-• Owner Hanya merespon yang berkaitan dengan BOT
-• No Telp`
+𝐁𝐮𝐭𝐮𝐡 𝐁𝐚𝐧𝐭𝐮𝐚𝐧 𝐒𝐚𝐦𝐚 𝐎𝐰𝐧𝐞𝐫 𝐂𝐡𝐚𝐭 𝐀𝐣𝐚`
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
@@ -41,15 +37,7 @@ const sections = [
 	title: `${htjava} OWNER –––––––––·•`,
 	rows: [
 	{title: "📱 • Nomor Owner", rowId: ".owner nomor"},
-	{title: "📱 • Pengembang", rowId: ".whmods2"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
-	]
-    },{
-	title: `${htjava} SUPPORT ME –––––––·•`,
-	rows: [
-	    {title: "💹 • Donasi", rowId: ".owner nomor"},
-	{title: "🔖 • Sewa", rowId: ".sewa"},
-	{title: "🌟 • Buy Premium", rowId: ".premium"},
 	]
   },
 ]
