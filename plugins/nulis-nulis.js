@@ -3,7 +3,7 @@ import { format } from 'util'
 import { spawn } from 'child_process'
 
 // Font By MFarelS:V
-let fontPath = 'src/font/Roboto-Italic-ttf'
+let fontPath = 'src/font/Zahraaa.ttf'
 let handler = async (m, { conn, args }) => {
     if (!global.support.convert &&
         !global.support.magick &&
@@ -56,7 +56,7 @@ let handler = async (m, { conn, args }) => {
     spawn(_spawnprocess, _spawnargs)
         .on('error', e => m.reply(format(e)))
         .on('close', () => {
-            conn.sendFile(m.chat, Buffer.concat(bufs), 'nulis.jpg', '𝐍𝐨𝐡 𝐃𝐚𝐡 𝐉𝐚𝐝𝐢', m)
+            conn.sendFile(m.chat, Buffer.concat(bufs), 'nulis.jpg', 'Ga Bisa Nulis Ya', m)
         })
         .stdout.on('data', chunk => bufs.push(chunk))
 }
