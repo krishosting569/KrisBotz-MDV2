@@ -34,38 +34,30 @@ const defaultMenu = {
   before: `
 
 ╭─────═[ 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 ]═─────⋆
-│╭─┌◪ *${ucapanWaktu} ${conn.getName(m.sender)}*
-││
-│├❒ *Nama : %name*
-│├❒ *Xp : %totalexp*
-│├❒ *Limit : %limit*
-│├❒ *Level : %level*
-│├❒ *Premium : ${premium ? 'Yes' : 'Gratisan'}*
-│└❒ *Register : ${registered ? 'Yes' : 'No'}*
-│
-├◪ *TIME ⏳*
-││
-│├❒ *Hari: %week %weton*
-│├❒ *Tanggal: %date*
-│└❒ *Waktu:* _%time_
-│
-├◪ *STATUS BOT*
-││
-│├❒ *%totalreg* Pengguna
-│├❒ *${groupsIn.length}* Group Chat
-│├❒ *${chats.length}* Total Chat
-│├❒ _%uptime_ Online
-│└❒ *Battery : ${conn.battery ? `${conn.battery.value}%* ${conn.battery.live ? 'Sedang Di Cass' : 'Tidak Di Cass'}` : 'Wait....*'}
-│
-├◪ *INFO*
-││
-│├❒ *Owner Of This Bot*
-│├❒ _http://wa.me/6285786211623
-│├❒ *Official WhatsApp Bot Groups*
-│├❒ *Tap To Join our Telegram Group*
-│└❒ *https://t.me/krishosting*
-│
-└───────────────────────
+│╭────────────────···
+│  ⬡ 𝐍𝐚𝐦𝐚 𝐁𝐨𝐭:* %me
+│  ⬡ 𝐌𝐨𝐝𝐞:* %mode
+│  ⬡ 𝐏𝐫𝐞𝐟𝐢𝐱:* [ *%_p* ]
+│  ⬡ 𝐁𝐚𝐢𝐥𝐲𝐞𝐬:* Multi Device
+│  ⬡ 𝐁𝐚𝐭𝐭𝐞𝐫𝐲:* ${conn.battery != undefined ? `$             {conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│  ⬡ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: %platform
+│  ⬡ 𝐓𝐲𝐩𝐞: Node.Js
+│  ⬡ 𝐔𝐩𝐭𝐢𝐦𝐞: %muptime
+│  ⬡ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: %rtotalreg dari %totalreg
+│╰────────────────···
+┠──────═[ 𝐈𝐍𝐅𝐎 𝐔𝐒𝐄𝐑 ]═─────⋆
+│╭────────────────···
+│  ⬡ 𝐍𝐚𝐦𝐞: %name
+│  ⬡ 𝐓𝐚𝐠𝐬: %tag
+│  ⬡ 𝐏𝐫𝐞𝐦𝐢𝐮𝐦: %prems
+│  ⬡ 𝐋𝐢𝐦𝐢𝐭: %limit
+│  ⬡ 𝐌𝐨𝐧𝐞𝐲: %money   
+│  ⬡ 𝐑𝐨𝐥𝐞: %role
+│  ⬡ 𝐋𝐞𝐯𝐞𝐥: %level [ %xp4levelup Xp For Levelup] 
+│  ⬡ 𝐗𝐩: %exp / %maxexp 
+│  ⬡ 𝐓𝐨𝐭𝐚𝐥 𝐗𝐩: %totalexp
+│ ╰────────────────···
+╰──────────═┅═──────⬣
 %readmore
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
@@ -299,7 +291,7 @@ if (teks == 'menbalas') tags = {
             {title: `🌟 ${pmenus}『  BUY PREMIUM 』`, rowId: ".premium", description: "Menampilkan list harga premium"},
             {title: `💹 ${pmenus}『  DONASI 』`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
         ]
-        }{
+        },{
           title: `${htki}『 MENU MENFESS ${htka} 』`,
           rows: [
             {title: `💬 ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Menu Manfess BOT"},
@@ -363,6 +355,7 @@ let tek = `𝑯𝒂𝒊 *${ucapan()} ${conn.getName(m.sender)}*
 │ シ︎✔︎ 𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖
 │ 
 │ ➪ 𝑵𝒐𝒕𝒆 : 𝑲𝒍𝒊𝒌 𝑩𝒖𝒕𝒕𝒐𝒏 𝑫𝒊 𝑩𝒂𝒘𝒂𝒉 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒂𝒏𝒑𝒊𝒍𝒌𝒂𝒏 𝑴𝒆𝒏𝒖
+┠───────────────────⬣
 │ ➪ 𝑵𝒂𝒎𝒆 𝑩𝒐𝒕𝒛 : ${namebot}
 │ ➪ 𝑶𝒘𝒏𝒆𝒓 𝑩𝒐𝒕𝒛 : ${nameown}
 ╰──────────═┅═──────⬣`
