@@ -5,22 +5,20 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
 let str = `${global.wm}
 
-╔═══════════════════
-║ _*DONASI UNTUK*_  ${nameown,} ×͜×
-╠═══════════════════
-║╭──❉ 〔 *𝗗𝗢𝗡𝗔𝗦𝗜* 〕 ❉──────
-║│ • *Smartfren:* [${global.ppulsa}]
-║│ • *Indosat:* [${global.ppulsa2}]
-║│ • *Dana:* [${global.pdana}]
-║│ • *Gopay:* [${global.pgopay}]
-║│ • *Ovo:* [${global.povo}]
-║│ • *Link Aja:* [${global.plinkaja}]
-║╰──────────────────
-╰═══════════════════`
-let wibu = `https://telegra.ph/file/1a0f9117d37f4dcf63d8c.jpg` 
+┌─「 Donasi • Pulsa 」
+│ • *Smartfren* [${global.ppulsa}]
+❏────
+
+┌─「 Donasi • Non Pulsa 」
+│ • *Dana:* [${global.pdana}]
+│ • *Gopay:* [${global.pgopay}]
+│ • *Ovo:* [${global.povo}]
+│ • *Link Aja:* [${global.plinkaja}]
+❏────`
+let wibu = `https://telegra.ph/file/b671ce3000e2ca4bf1dff.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "htpp://krishosnd/_ctzhid",
+    mediaUrl: "https://chat.whatsapp.com/GC7ffQKysqt7xJBTzO4UFH",
     mediaType: "VIDEO",
     description: "htpps://boncelhoninsjsjsjsks-//6hwhs", 
     title: '𝑲𝒓𝒊𝒔𝑩𝒐𝒕𝒛-𝑴𝒅',
