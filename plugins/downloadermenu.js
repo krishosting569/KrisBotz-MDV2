@@ -11,7 +11,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 
   } finally {
     let str = ` *DOWNLOADER MENU*
-• *${usedPrefix}fb <url>*
 • *${usedPrefix}ig <url> (Limit)*
 • *${usedPrefix}ighighlight <username> (Limit)*
 • *${usedPrefix}igstalk <username> (Limit)*
@@ -20,6 +19,11 @@ let handler = async (m, { conn, usedPrefix }) => {
 • *${usedPrefix}tiktok <url> (Limit)*
 • *${usedPrefix}twitter <link> (Limit)*
 • *${usedPrefix}twt <link> (Limit)*
+• *${usedPrefix}apk <url> (Limit)*
+• *${usedPrefix}pintereset (Limit)*
+• *${usedPrefix}aio <url> (Limit)*
+• *${usedPrefix}zippyshare <url> (Limit)*
+• *${usedPrefix}facebook <link> (Limit)*
 • *${usedPrefix}twitstalk <@user> (Limit)*
 • *${usedPrefix}stalktwit <@user> (Limit)*
 • *${usedPrefix}ytmp3 <url> (Limit)*
