@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://telegra.ph/file/da0d82e8fce4e5db26098.jpg" alt="KRISBOTZ" width="100"/>
+<img src="https://camo.githubusercontent.com/6c1158e379b92c4a91233c625fd4a02a356e99b8d45003544f86c57545b2b218/68747470733a2f2f74656c656772612e70682f66696c652f6461306438326538666365346535646232363039382e6a7067" alt="KRISBOTZ" width="100"/>
 
 
 </p>
