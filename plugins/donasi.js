@@ -15,13 +15,13 @@ let str = `${global.wm}
 │ • *Ovo:* [${global.povo}]
 │ • *Link Aja:* [${global.plinkaja}]
 ❏────`
-let wibu = `https://telegra.ph/file/b671ce3000e2ca4bf1dff.jpg` 
+let wibu = `https://telegra.ph/file/b52bc49ab89a3caad3607.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://chat.whatsapp.com/GC7ffQKysqt7xJBTzO4UFH",
     mediaType: "VIDEO",
     description: "htpps://boncelhoninsjsjsjsks-//6hwhs", 
-    title: '𝑲𝒓𝒊𝒔𝑩𝒐𝒕𝒛-𝑴𝒅',
+    title: '𝚁𝚐𝚂𝚝𝚘𝚛𝚎',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sig
