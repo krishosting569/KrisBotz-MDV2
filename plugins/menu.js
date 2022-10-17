@@ -364,7 +364,7 @@ const listMessage = {
   footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `𝐌𝐄𝐍𝐔 𝐊𝐑𝐈𝐒 ⎙`, 
+  buttonText: `𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷 ⎙`, 
   sections
 }
   if (teks == '404') {
