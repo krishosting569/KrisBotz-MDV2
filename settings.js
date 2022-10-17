@@ -1,7 +1,7 @@
 //⫰⫯ 𝑵𝒐𝒕𝒆 : 𝑲𝒂𝒍𝒂𝒖 𝑴𝒂𝒖 𝑫𝒊 𝑯𝒂𝒑𝒖𝒔 𝑴𝒊𝒌𝒊𝒓 𝑫𝒖𝒍𝒖 𝑵𝒈𝒂𝒃 𝑺𝒊𝒂𝒑𝒂 𝒀𝒂𝒏𝒈 𝑩𝒊𝒌𝒊𝒏 𝑺𝒄𝒓𝒊𝒑𝒕 𝑫𝒂𝒏 𝑴𝒆𝒏𝒈𝒆𝒅𝒊𝒕 𝑵𝒚𝒂
 
-//𝐀𝐮𝐭𝐡𝐨𝐫 : 𝑲𝒓𝒊𝒔 𝑯𝒐𝒔𝒕𝒊𝒏𝒈
-//𝐖𝐚 : 085786211623 / 0882007324217
+//𝐀𝐮𝐭𝐡𝐨𝐫 : 𝙶𝚞𝚜𝚝𝚒 𝙿𝚊𝚗𝚎𝚗𝚐𝚊𝚑
+//𝐖𝐚 : 6285842885498
 //𝐛𝐚𝐬𝐞 : 𝑩𝒐𝒄𝒉𝒊𝒍 𝑮𝒂𝒎𝒊𝒏𝒈
 //𝐌𝐲 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 : 10 𝑶𝒌𝒕𝒐𝒃𝒆𝒓 2022
 
@@ -60,34 +60,34 @@ global.sfb = 'https://www.facebook.com/' // facebook
 global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
-global.pdana = '0882007324218' //dana
-global.povo = '0882007324218' //ovo
-global.pgopay = '0882007324218' //gopay
-global.plinkaja = '0882007324218' //link aja
-global.ppulsa = '0882007324218' //telkomsel
-global.ppulsa2 = '085786211623' // kalau ada kartu lain isi aja
+global.pdana = '𝟶𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾' //dana
+global.povo = '𝟶𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾' //ovo
+global.pgopay = '𝟶𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾' //gopay
+global.plinkaja = '-' //link aja
+global.ppulsa = '-' //telkomsel
+global.ppulsa2 = '-' // kalau ada kartu lain isi aja
 global.psaweria = 'https://saweria.com/kosong'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '62XXXXXXXXXXX'
-global.nomorown = '6285786211623'
-global.namebot = '𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝'
-global.nameown = '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠'
+global.nomorown = '𝟼𝟸𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾'
+global.namebot = '𝙶𝚙𝙱𝚘𝚝𝚣'
+global.nameown = '𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷'
 
 /*============== BIODATA ==============*/
 global.umurown = '15'
-global.tinggalown = 'Jawa Tengah Cikamuning' 
-global.hobyown = 'Membikin Bot'
+global.tinggalown = '𝙹𝙰𝚆𝙰 𝚃𝙴𝙽𝙶𝙰𝙷' 
+global.hobyown = '-'
 global.sifatown = 'Baik Penolong Penyayang'
 global.agamaown = 'Islam'
 global.genderown = 'laki-laki'
-global.kelasown = '9'
+global.kelasown = '𝙺𝙴𝙿𝙾 𝙰𝙹𝙶'
 global.tanggallahirown = '05-𝐀𝐠𝐮𝐬𝐭𝐮𝐬-2022'
 global.namarlown = 'Hamba Allah'
 
 /*============== Github Thanks To ==============*/
-global.namagithub = 'krishosting' // nama github lu
-global.linkgithub = 'https://github.com/keposlur' // tarok link github lu
+global.namagithub = '-' // nama github lu
+global.linkgithub = '-' // tarok link github lu
 
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
@@ -96,11 +96,10 @@ global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285786211623', '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠', true],
-  ['6285786211623', '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠', true],
-  ['6285786211623', '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠', true],
-  ['6285786211623', '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠', true],
-  ['6285786211623', '𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠', true]
+  ['6285842885498', '𝙶𝚞𝚜𝚝𝚒 𝙿𝚊𝚗𝚎𝚗𝚐𝚊𝚑', true],
+  ['6285842885498', '𝙶𝚞𝚜𝚝𝚒 𝙿𝚊𝚗𝚎𝚗𝚐𝚊𝚑', true],
+  ['6285842885498', '𝙶𝚞𝚜𝚝𝚒 𝙿𝚊𝚗𝚎𝚗𝚐𝚊𝚑', true],
+  ['6285842885498', '𝙶𝚞𝚜𝚝𝚒 𝙿𝚊𝚗𝚎𝚗𝚐𝚊𝚑', true]
     //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
@@ -149,14 +148,14 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 © 𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝 」' //Main Watermark
-global.wm2 = '© 𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝'
-global.wm3 = '© 𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝 '
+global.wm = '                「 © 𝙶𝚙𝚆𝚊𝚝𝚎𝚛𝚖𝚊𝚛𝚔 」' //Main Watermark
+global.wm2 = '© 𝙶𝚙𝚆𝚊𝚝𝚎𝚛𝚖𝚊𝚛𝚔'
+global.wm3 = '© 𝙶𝚙𝚆𝚊𝚝𝚎𝚛𝚖𝚊𝚛𝚔'
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
-global.titlebot = `© 𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝`
-global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = '                「𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝 あ」'
+global.titlebot = `© 𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷`
+global.packname = '☂︎ 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷'
+global.author = '                「𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷」'
 
 /*Fake*/
 global.fsizedoc = '1'.repeat(10)
