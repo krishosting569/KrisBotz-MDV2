@@ -51,26 +51,26 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 
-global.sig = 'https://instagram.com/Kris01_Real' // ig
-global.sgh = 'https://github.com/krishosting569/' // github
-global.sgc = 'https://chat.whatsapp.com/FQkbyTEfvES3D3OI' // group whatsapp
+global.sig = 'https://instagram.com/' // ig
+global.sgh = 'https://github.com/' // github
+global.sgc = 'https://chat.whatsapp.com/EhBf6clULac2sN1kS5FY1b' // group whatsapp
 global.sdc = 'https://www.discord.com'//discord
-global.snh = 'https://www.youtube.com/channel/KRISHOSTING' // my youtube channel
+global.snh = 'https://www.youtube.com/channel/' // my youtube channel
 global.sfb = 'https://www.facebook.com/' // facebook
 global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
-global.pdana = '𝟶𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾' //dana
-global.povo = '𝟶𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾' //ovo
-global.pgopay = '𝟶𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾' //gopay
+global.pdana = '6285842885498' //dana
+global.povo = '6285842885498' //ovo
+global.pgopay = '6285842885498' //gopay
 global.plinkaja = '-' //link aja
 global.ppulsa = '-' //telkomsel
 global.ppulsa2 = '-' // kalau ada kartu lain isi aja
 global.psaweria = 'https://saweria.com/kosong'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '62XXXXXXXXXXX'
-global.nomorown = '𝟼𝟸𝟾𝟻𝟾𝟺𝟸𝟾𝟾𝟻𝟺𝟿𝟾'
+global.nomorbot = '6282112332831'
+global.nomorown = '6285842885498'
 global.namebot = '𝙶𝚙𝙱𝚘𝚝𝚣'
 global.nameown = '𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷'
 
@@ -148,14 +148,14 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 © 𝙶𝚙𝚆𝚊𝚝𝚎𝚛𝚖𝚊𝚛𝚔 」' //Main Watermark
-global.wm2 = '© 𝙶𝚙𝚆𝚊𝚝𝚎𝚛𝚖𝚊𝚛𝚔'
-global.wm3 = '© 𝙶𝚙𝚆𝚊𝚝𝚎𝚛𝚖𝚊𝚛𝚔'
+global.wm = '                「 © 𝕲𝖚𝖘𝖙𝖎 𝕻𝖆𝖓𝖊𝖓𝖌𝖆𝖍 」' //Main Watermark
+global.wm2 = '© 𝕲𝖚𝖘𝖙𝖎 𝕻𝖆𝖓𝖊𝖓𝖌𝖆𝖍'
+global.wm3 = '© 𝕲𝖚𝖘𝖙𝖎 𝕻𝖆𝖓𝖊𝖓𝖌𝖆𝖍'
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
-global.titlebot = `© 𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷`
-global.packname = '☂︎ 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷'
-global.author = '                「𝙶𝚄𝚂𝚃𝙸 𝙿𝙰𝙽𝙴𝙽𝙶𝙰𝙷」'
+global.titlebot = `© 𝕲𝖚𝖘𝖙𝖎 𝕻𝖆𝖓𝖊𝖓𝖌𝖆𝖍`
+global.packname = '☂︎ 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝕲𝖚𝖘𝖙𝖎 𝕻𝖆𝖓𝖊𝖓𝖌𝖆𝖍'
+global.author = '                「𝕲𝖚𝖘𝖙𝖎 𝕻𝖆𝖓𝖊𝖓𝖌𝖆𝖍」'
 
 /*Fake*/
 global.fsizedoc = '1'.repeat(10)
@@ -646,8 +646,8 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '𝐊𝐫𝐢𝐬𝐁𝐨𝐭𝐳-𝐌𝐝'
-global.stickauth = `© 𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠`
+global.stickpack = '𝙶𝙿 𝚂𝚃𝙸𝙲𝙺𝙴𝚁'
+global.stickauth = `© 𝙶𝙿 𝚂𝚃𝙸𝙲𝙺𝙴𝚁`
 
 global.multiplier = 38 // The higher, The harder levelup
 
