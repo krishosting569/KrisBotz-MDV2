@@ -18,33 +18,19 @@ export async function all(m) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat.whatsapp.com') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.sendButton(m.chat, `${wm}
 
-        ╭━━━━「 SEWA 」
-        ┊⫹⫺ Hemat: 5k/grup (1 minggu)
-        ┊⫹⫺ Normal: 15k/grup (1 bulan)
-        ┊⫹⫺ Standar: 30k/grup (2 bulan)
-        ┊⫹⫺ Pro: 35k/grup (4 bulan)                                                      
-        ┊⫹⫺ Vip: = 65k/grup (12 bulan)
-        ╰═┅═━––––––๑
+        ╭━━》「 𝚂𝚆𝙴𝙰 𝙱𝙾𝚃𝚉 」
+        ┊⫹⫺ 𝟷𝟶𝚔/𝙶𝚁𝚄𝙿 『𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽』
+        ╰━═━━━━━━》
         
-        ╭━━━━「 PREMIUM 」
-        ┊⫹⫺ Hemat: 5k (1 minggu)
-        ┊⫹⫺ Normal: 20k (1 bulan)
-        ┊⫹⫺ Pro: 40k (4 bulan)
-        ┊⫹⫺ Vip: 50k (8 bulan)                                               
-        ┊⫹⫺ Permanent: = 70k (Unlimited)
-        ╰═┅═━––––––๑
+        ⫹⫺ 𝙿𝙰𝚈𝙼𝙴𝙽𝚃:
+        • 𝙶𝙾𝙿𝙰𝚈: [085842885498]
+        • 𝙳𝙰𝙽𝙰: [085842885498]
+        • 𝙾𝚅𝙾: [085842885498]
         
-        ⫹⫺ PAYMENT:
-        • Pulsa Telkomsel: [082127487538]
-        • Dana: [082127487538]
-        • Gopay: [082127487538]
-        • Ovo: [082127487538]
-        • Link Aja: [082127487538]
+        𝑁𝑜𝑚𝑒𝑟 𝑂𝑤𝑛𝑒𝑟 :
+        wa.me/085842885498
         
-        Nomor Owner :
-        wa.me/6282127487538
-        
-        ▌│█║▌║▌║║▌║▌║█│▌
+       ◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤
         
         #BY WH MODS DEV
         `.trim(), wm, 'Pemilik Bot', '.owner', m)
