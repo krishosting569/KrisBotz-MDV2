@@ -18,29 +18,19 @@ export async function all(m) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat.whatsapp.com') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.sendButton(m.chat, `${wm}
 
-        ╭━━━━「 SEWA 」
-        ┊⫹⫺ Hemat: 5k/grup (1 minggu)
-        ┊⫹⫺ Normal: 15k/grup (1 bulan)
-        ┊⫹⫺ Standar: 30k/grup (2 bulan)
-        ┊⫹⫺ Pro: 35k/grup (4 bulan)                                                 
-        ╰═┅═––––––》
+        ╭━━》「 𝚂𝙴𝚆𝙰 𝙱𝙾𝚃𝚉 」
+        ┊⫹⫺ 𝙶𝙰𝙺 𝙳𝙸 𝚂𝙴𝚆𝙰𝙺𝙰𝙽 !!
+        ╰━═━━━━━━》
         
-        ╭━━━━「 PREMIUM 」
-        ┊⫹⫺ Hemat: 5k (1 minggu)
-        ┊⫹⫺ Normal: 20k (1 bulan)
-        ┊⫹⫺ Pro: 40k (4 bulan)
-        ┊⫹⫺ Vip: 50k (8 bulan)                                               
-        ╰═┅═––––––》
+        ⫹⫺ 𝙿𝙰𝚈𝙼𝙴𝙽𝚃:
+        • 𝙶𝙾𝙿𝙰𝚈: [085842885498]
+        • 𝙳𝙰𝙽𝙰: [085842885498]
+        • 𝙾𝚅𝙾: [085842885498]
         
-        ⫹⫺ PAYMENT:
-        • Dana: [085842885498]
-        • Gopay: [085842885498]
-        • Ovo: [085842885498]
-        
-        Nomor Owner :
+        𝑁𝑜𝑚𝑒𝑟 𝑂𝑤𝑛𝑒𝑟 :
         wa.me/085842885498
         
-        ▌│█║▌║▌║║▌║▌║█│▌
+       ◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤
         
         #BY WH MODS DEV
         `.trim(), wm, 'Pemilik Bot', '.owner', m)
